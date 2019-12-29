@@ -1,0 +1,289 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{32FD8D87-A23F-487A-9450-257C16EDAC0E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>AutomatedSS.My.MyApplication</StartupObject>
+    <RootNamespace>AutomatedSS</RootNamespace>
+    <AssemblyName>AutomatedSS</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>AutomatedSS.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>AutomatedSS.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="classRegistration.Designer.vb">
+      <DependentUpon>classRegistration.vb</DependentUpon>
+    </Compile>
+    <Compile Include="classRegistration.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="classSchedule.Designer.vb">
+      <DependentUpon>classSchedule.vb</DependentUpon>
+    </Compile>
+    <Compile Include="classSchedule.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="classScheduleAU.Designer.vb">
+      <DependentUpon>classScheduleAU.vb</DependentUpon>
+    </Compile>
+    <Compile Include="classScheduleAU.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Class\RoomClass.vb" />
+    <Compile Include="Class\ScheduleClass.vb" />
+    <Compile Include="Class\SubjectClass.vb" />
+    <Compile Include="Class\UserClass.vb" />
+    <Compile Include="masterList.Designer.vb">
+      <DependentUpon>masterList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="masterList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="masterListDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>masterListDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="masterListDataSet.vb">
+      <DependentUpon>masterListDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="teachingLoad.Designer.vb">
+      <DependentUpon>teachingLoad.vb</DependentUpon>
+    </Compile>
+    <Compile Include="teachingLoad.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="room.Designer.vb">
+      <DependentUpon>room.vb</DependentUpon>
+    </Compile>
+    <Compile Include="room.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="roomAU.Designer.vb">
+      <DependentUpon>roomAU.vb</DependentUpon>
+    </Compile>
+    <Compile Include="roomAU.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="studentAU.Designer.vb">
+      <DependentUpon>studentAU.vb</DependentUpon>
+    </Compile>
+    <Compile Include="studentAU.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Class\PersonClass.vb" />
+    <Compile Include="Connection.vb" />
+    <Compile Include="GlobalVariables.vb" />
+    <Compile Include="index.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="index.Designer.vb">
+      <DependentUpon>index.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="instructor.Designer.vb">
+      <DependentUpon>instructor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="instructor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="instructorAU.Designer.vb">
+      <DependentUpon>instructorAU.vb</DependentUpon>
+    </Compile>
+    <Compile Include="instructorAU.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="main.Designer.vb">
+      <DependentUpon>main.vb</DependentUpon>
+    </Compile>
+    <Compile Include="main.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="student.Designer.vb">
+      <DependentUpon>student.vb</DependentUpon>
+    </Compile>
+    <Compile Include="student.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="subject.Designer.vb">
+      <DependentUpon>subject.vb</DependentUpon>
+    </Compile>
+    <Compile Include="subject.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="subjectAU.Designer.vb">
+      <DependentUpon>subjectAU.vb</DependentUpon>
+    </Compile>
+    <Compile Include="subjectAU.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemFunction.vb" />
+    <Compile Include="SystemObjects.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="classRegistration.resx">
+      <DependentUpon>classRegistration.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="classSchedule.resx">
+      <DependentUpon>classSchedule.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="classScheduleAU.resx">
+      <DependentUpon>classScheduleAU.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="masterList.resx">
+      <DependentUpon>masterList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="masterListReport.rdlc" />
+    <EmbeddedResource Include="teachingLoad.resx">
+      <DependentUpon>teachingLoad.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="room.resx">
+      <DependentUpon>room.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="roomAU.resx">
+      <DependentUpon>roomAU.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="studentAU.resx">
+      <DependentUpon>studentAU.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="index.resx">
+      <DependentUpon>index.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="instructor.resx">
+      <DependentUpon>instructor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="instructorAU.resx">
+      <DependentUpon>instructorAU.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="main.resx">
+      <DependentUpon>main.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="student.resx">
+      <DependentUpon>student.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="subject.resx">
+      <DependentUpon>subject.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="subjectAU.resx">
+      <DependentUpon>subjectAU.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="ClassDiagram2.cd" />
+    <None Include="masterListDataSet.xsc">
+      <DependentUpon>masterListDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="masterListDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>masterListDataSet.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="masterListDataSet.xss">
+      <DependentUpon>masterListDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
