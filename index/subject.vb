@@ -13,9 +13,9 @@
         Dim dsSubject = New DataSet
 
         If search = Nothing Then
-            sql = "SELECT * FROM SubjectView WHERE Department = '" & objUser.getUserType & "' AND IsDeleted = 'False' "
+            sql = "SELECT * FROM SubjectView WHERE Department = '" & objUser.getUserType & "' AND IsDeleted = 'False' ORDER BY Subject ASC "
         Else
-            sql = "SELECT * FROM SubjectView WHERE Department = '" & objUser.getUserType & "' AND (Subject LIKE '%" & search & "%' OR SubjectDescription LIKE '%" & search & "%') AND IsDeleted = 'False' "
+            sql = "SELECT * FROM SubjectView WHERE Department = '" & objUser.getUserType & "' AND (Subject LIKE '%" & search & "%' OR SubjectDescription LIKE '%" & search & "%') AND IsDeleted = 'False' ORDER BY Subject ASC "
         End If
 
         If fillData(sql, dsSubject, "tblSubject") = True Then

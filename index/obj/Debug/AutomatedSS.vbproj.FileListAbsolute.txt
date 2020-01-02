@@ -27,7 +27,6 @@ E:\Systems\Automated Scheduling System - VB\index\obj\Debug\AutomatedSS.studentA
 E:\Systems\Automated Scheduling System - VB\index\obj\Debug\AutomatedSS.index.resources
 E:\Systems\Automated Scheduling System - VB\index\obj\Debug\AutomatedSS.instructor.resources
 E:\Systems\Automated Scheduling System - VB\index\obj\Debug\AutomatedSS.instructorAU.resources
-E:\Systems\Automated Scheduling System - VB\index\obj\Debug\AutomatedSS.main.resources
 E:\Systems\Automated Scheduling System - VB\index\obj\Debug\AutomatedSS.Resources.resources
 E:\Systems\Automated Scheduling System - VB\index\obj\Debug\AutomatedSS.student.resources
 E:\Systems\Automated Scheduling System - VB\index\obj\Debug\AutomatedSS.subject.resources
@@ -53,7 +52,6 @@ E:\Automated Scheduling System - VB\index\obj\Debug\AutomatedSS.studentAU.resour
 E:\Automated Scheduling System - VB\index\obj\Debug\AutomatedSS.index.resources
 E:\Automated Scheduling System - VB\index\obj\Debug\AutomatedSS.instructor.resources
 E:\Automated Scheduling System - VB\index\obj\Debug\AutomatedSS.instructorAU.resources
-E:\Automated Scheduling System - VB\index\obj\Debug\AutomatedSS.main.resources
 E:\Automated Scheduling System - VB\index\obj\Debug\AutomatedSS.Resources.resources
 E:\Automated Scheduling System - VB\index\obj\Debug\AutomatedSS.student.resources
 E:\Automated Scheduling System - VB\index\obj\Debug\AutomatedSS.subject.resources
@@ -76,3 +74,9 @@ E:\Automated Scheduling System - VB\index\bin\Debug\pt\Microsoft.SqlServer.Types
 E:\Automated Scheduling System - VB\index\bin\Debug\ru\Microsoft.SqlServer.Types.resources.dll
 E:\Automated Scheduling System - VB\index\bin\Debug\zh-Hans\Microsoft.SqlServer.Types.resources.dll
 E:\Automated Scheduling System - VB\index\bin\Debug\zh-Hant\Microsoft.SqlServer.Types.resources.dll
+E:\Automated Scheduling System - VB\index\obj\Debug\AutomatedSS.StudentRegistration.resources
+E:\Automated Scheduling System - VB\index\obj\Debug\AutomatedSS.settings.resources
+E:\Automated Scheduling System - VB\index\obj\Debug\AutomatedSS.btnUser.resources
+E:\Systems\Automated Scheduling System - VB\index\obj\Debug\AutomatedSS.settings.resources
+E:\Systems\Automated Scheduling System - VB\index\obj\Debug\AutomatedSS.StudentRegistration.resources
+E:\Systems\Automated Scheduling System - VB\index\obj\Debug\AutomatedSS.btnUser.resources

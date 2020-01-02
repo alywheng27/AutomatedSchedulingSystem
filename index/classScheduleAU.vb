@@ -306,34 +306,42 @@
                 If dsDay.Tables("tblDay").Rows.Count > 0 Then
                     Dim count = 0
                     ReDim dayID(7)
+                    Dim daySring As String = Nothing
 
                     If chbMon.Checked Then
                         dayID(count) = 1
                         count += 1
+                        daySring = daySring & "M"
                     End If
                     If chbTue.Checked Then
                         dayID(count) = 2
                         count += 1
+                        daySring = daySring & "T"
                     End If
                     If chbWed.Checked Then
                         dayID(count) = 3
                         count += 1
+                        daySring = daySring & "W"
                     End If
                     If chbThu.Checked Then
                         dayID(count) = 4
                         count += 1
+                        daySring = daySring & "Th"
                     End If
                     If chbFri.Checked Then
                         dayID(count) = 5
                         count += 1
+                        daySring = daySring & "F"
                     End If
                     If chbSat.Checked Then
                         dayID(count) = 6
                         count += 1
+                        daySring = daySring & "S"
                     End If
                     If chbSun.Checked Then
                         dayID(count) = 7
                         count += 1
+                        daySring = daySring & "Su"
                     End If
 
                     For i = 0 To count - 1
@@ -342,6 +350,11 @@
                           "
                         updateData(sql)
                     Next
+
+                    sql = " 
+                            INSERT INTO GroupDaySchedule (ClassScheduleID, GroupDay) VALUES (" & dsDay.Tables("tblDay").Rows(0).Item("ClassScheduleID") & ", '" & daySring & "');
+                          "
+                    updateData(sql)
 
 
                 End If
@@ -378,34 +391,42 @@
 
             Dim count = 0
             ReDim dayID(7)
+            Dim daySring As String = Nothing
 
             If chbMon.Checked Then
                 dayID(count) = 1
                 count += 1
+                daySring = daySring & "M"
             End If
             If chbTue.Checked Then
                 dayID(count) = 2
                 count += 1
+                daySring = daySring & "T"
             End If
             If chbWed.Checked Then
                 dayID(count) = 3
                 count += 1
+                daySring = daySring & "W"
             End If
             If chbThu.Checked Then
                 dayID(count) = 4
                 count += 1
+                daySring = daySring & "Th"
             End If
             If chbFri.Checked Then
                 dayID(count) = 5
                 count += 1
+                daySring = daySring & "F"
             End If
             If chbSat.Checked Then
                 dayID(count) = 6
                 count += 1
+                daySring = daySring & "S"
             End If
             If chbSun.Checked Then
                 dayID(count) = 7
                 count += 1
+                daySring = daySring & "Su"
             End If
 
             For i = 0 To count - 1
@@ -414,6 +435,11 @@
                       "
                 updateData(sql)
             Next
+
+            sql = " 
+                    UPDATE GroupDaySchedule SET GroupDay = '" & daySring & "' WHERE ClassScheduleID =  " & objSchedule.getClassScheduleID & ";
+                  "
+            updateData(sql)
 
             MsgBox("Class Updated.", vbInformation + vbOKOnly, systemName)
             clear()

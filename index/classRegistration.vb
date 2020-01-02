@@ -22,9 +22,9 @@
         Dim dsTime = New DataSet
 
         If search = Nothing Then
-            sql = "SELECT * FROM ClassScheduleView WHERE IsDeleted = 'False' "
+            sql = "SELECT * FROM ClassScheduleView WHERE IsDeleted = 'False' AND AcademicYear = '" & objCurrent.getYear & "' AND Semester = '" & objCurrent.getSemester & "' ORDER BY Subject ASC "
         Else
-            sql = "SELECT * FROM ClassScheduleView WHERE Subject LIKE '%" & search & "%' AND IsDeleted = 'False' "
+            sql = "SELECT * FROM ClassScheduleView WHERE Subject LIKE '%" & search & "%' AND IsDeleted = 'False' AND AcademicYear = '" & objCurrent.getYear & "' AND Semester = '" & objCurrent.getSemester & "' ORDER BY Subject ASC "
         End If
 
         If fillData(sql, dsClass, "tblClass") = True Then
@@ -61,7 +61,7 @@
 
                     Dim time = timeStart & " - " & timeEnd
 
-                    xItem.SubItems.Add(time & " " & day)
+                    xItem.SubItems.Add(day & " " & time)
 
                     xItem.SubItems.Add(dsClass.Tables("tblClass").Rows(i).Item("Section"))
                     xItem.SubItems.Add(dsClass.Tables("tblClass").Rows(i).Item("Room"))
@@ -87,9 +87,9 @@
 
 
         If search = Nothing Then
-            sql = "SELECT * FROM ClassRegistrationView WHERE StudentID = " & searchStudent & " AND IsDeleted = 'False' "
+            sql = "SELECT * FROM ClassRegistrationView WHERE StudentID = " & searchStudent & " AND AcademicYear = '" & objCurrent.getYear & "' AND Semester = '" & objCurrent.getSemester & "' AND IsDeleted = 'False' ORDER BY Subject ASC "
         Else
-            sql = "SELECT * FROM ClassRegistrationView WHERE StudentID = " & searchStudent & " AND Subject LIKE '%" & search & "%' AND IsDeleted = 'False' "
+            sql = "SELECT * FROM ClassRegistrationView WHERE StudentID = " & searchStudent & " AND Subject LIKE '%" & search & "%' AND AcademicYear = '" & objCurrent.getYear & "' AND Semester = '" & objCurrent.getSemester & "' AND IsDeleted = 'False' ORDER BY Subject ASC "
         End If
 
         If fillData(sql, dsRegister, "tblRegister") = True Then
@@ -121,7 +121,7 @@
 
                     Dim time = timeStart & " - " & timeEnd
 
-                    xItem.SubItems.Add(time & " " & day)
+                    xItem.SubItems.Add(day & " " & time)
 
                     xItem.SubItems.Add(dsRegister.Tables("tblRegister").Rows(i).Item("Section"))
                     xItem.SubItems.Add(dsRegister.Tables("tblRegister").Rows(i).Item("Room"))

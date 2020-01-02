@@ -22,6 +22,7 @@
 
         Dim sql As String
         Dim dsUser = New DataSet
+        Dim dsCurrent = New DataSet
 
         sql = "SELECT * FROM UserView WHERE Username = '" & username.Text & "'"
 
@@ -31,9 +32,17 @@
                     objUser = New UserClass(dsUser.Tables("tblUser").Rows(0).Item("UserID"))
                     objUser.getUsername = dsUser.Tables("tblUser").Rows(0).Item("Username")
                     objUser.getUserType = dsUser.Tables("tblUser").Rows(0).Item("UserType")
-                    main.Show()
 
-                    Me.Dispose()
+                    sql = "SELECT * FROM CurrentYearSem "
+                    If fillData(sql, dsCurrent, "tblCurrent") = True Then
+                        objCurrent = New CurrentClass()
+                        objCurrent.getYear = dsCurrent.Tables("tblCurrent").Rows(0).Item("CurrentYear")
+                        objCurrent.getSemester = dsCurrent.Tables("tblCurrent").Rows(0).Item("CurrentSemester")
+                        btnUser.Show()
+
+                        Me.Dispose()
+                    End If
+
                 Else
                     MsgBox("Username or password is incorrect.", vbInformation + vbOKOnly, systemName)
                     password.Text = ""

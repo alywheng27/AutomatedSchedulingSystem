@@ -27,10 +27,10 @@ Partial Class teachingLoad
         Me.btnPrintMasterList = New System.Windows.Forms.Button()
         Me.btnSearch = New System.Windows.Forms.Button()
         Me.Panel9 = New System.Windows.Forms.Panel()
-        Me.txtIDNumber3 = New System.Windows.Forms.TextBox()
+        Me.txtIDNumber4 = New System.Windows.Forms.TextBox()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Panel8 = New System.Windows.Forms.Panel()
-        Me.txtIDNumber2 = New System.Windows.Forms.TextBox()
+        Me.txtIDNumber3 = New System.Windows.Forms.TextBox()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.txtIDNumber = New System.Windows.Forms.TextBox()
@@ -44,9 +44,13 @@ Partial Class teachingLoad
         Me.ColumnHeader10 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.ColumnHeader11 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.ColumnHeader12 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.txtIDNumber2 = New System.Windows.Forms.TextBox()
+        Me.Label3 = New System.Windows.Forms.Label()
         Me.Panel9.SuspendLayout()
         Me.Panel8.SuspendLayout()
         Me.Panel1.SuspendLayout()
+        Me.Panel2.SuspendLayout()
         Me.SuspendLayout()
         '
         'Label1
@@ -97,25 +101,25 @@ Partial Class teachingLoad
         'Panel9
         '
         Me.Panel9.BackColor = System.Drawing.Color.White
-        Me.Panel9.Controls.Add(Me.txtIDNumber3)
-        Me.Panel9.Location = New System.Drawing.Point(985, 43)
+        Me.Panel9.Controls.Add(Me.txtIDNumber4)
+        Me.Panel9.Location = New System.Drawing.Point(995, 43)
         Me.Panel9.Name = "Panel9"
-        Me.Panel9.Size = New System.Drawing.Size(47, 31)
+        Me.Panel9.Size = New System.Drawing.Size(34, 31)
         Me.Panel9.TabIndex = 75
         '
-        'txtIDNumber3
+        'txtIDNumber4
         '
-        Me.txtIDNumber3.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.txtIDNumber3.Font = New System.Drawing.Font("Helvetica", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtIDNumber3.Location = New System.Drawing.Point(3, 7)
-        Me.txtIDNumber3.Name = "txtIDNumber3"
-        Me.txtIDNumber3.Size = New System.Drawing.Size(41, 16)
-        Me.txtIDNumber3.TabIndex = 1
+        Me.txtIDNumber4.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txtIDNumber4.Font = New System.Drawing.Font("Helvetica", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtIDNumber4.Location = New System.Drawing.Point(3, 7)
+        Me.txtIDNumber4.Name = "txtIDNumber4"
+        Me.txtIDNumber4.Size = New System.Drawing.Size(28, 16)
+        Me.txtIDNumber4.TabIndex = 1
         '
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(966, 50)
+        Me.Label9.Location = New System.Drawing.Point(979, 50)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(10, 13)
         Me.Label9.TabIndex = 77
@@ -124,25 +128,25 @@ Partial Class teachingLoad
         'Panel8
         '
         Me.Panel8.BackColor = System.Drawing.Color.White
-        Me.Panel8.Controls.Add(Me.txtIDNumber2)
-        Me.Panel8.Location = New System.Drawing.Point(901, 43)
+        Me.Panel8.Controls.Add(Me.txtIDNumber3)
+        Me.Panel8.Location = New System.Drawing.Point(934, 43)
         Me.Panel8.Name = "Panel8"
-        Me.Panel8.Size = New System.Drawing.Size(59, 31)
+        Me.Panel8.Size = New System.Drawing.Size(39, 31)
         Me.Panel8.TabIndex = 73
         '
-        'txtIDNumber2
+        'txtIDNumber3
         '
-        Me.txtIDNumber2.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.txtIDNumber2.Font = New System.Drawing.Font("Helvetica", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtIDNumber2.Location = New System.Drawing.Point(3, 7)
-        Me.txtIDNumber2.Name = "txtIDNumber2"
-        Me.txtIDNumber2.Size = New System.Drawing.Size(53, 16)
-        Me.txtIDNumber2.TabIndex = 1
+        Me.txtIDNumber3.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txtIDNumber3.Font = New System.Drawing.Font("Helvetica", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtIDNumber3.Location = New System.Drawing.Point(3, 7)
+        Me.txtIDNumber3.Name = "txtIDNumber3"
+        Me.txtIDNumber3.Size = New System.Drawing.Size(33, 16)
+        Me.txtIDNumber3.TabIndex = 1
         '
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(882, 50)
+        Me.Label8.Location = New System.Drawing.Point(915, 50)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(10, 13)
         Me.Label8.TabIndex = 76
@@ -154,16 +158,17 @@ Partial Class teachingLoad
         Me.Panel1.Controls.Add(Me.txtIDNumber)
         Me.Panel1.Location = New System.Drawing.Point(829, 43)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(47, 31)
+        Me.Panel1.Size = New System.Drawing.Size(24, 31)
         Me.Panel1.TabIndex = 72
         '
         'txtIDNumber
         '
         Me.txtIDNumber.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txtIDNumber.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.txtIDNumber.Font = New System.Drawing.Font("Helvetica", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtIDNumber.Location = New System.Drawing.Point(3, 7)
         Me.txtIDNumber.Name = "txtIDNumber"
-        Me.txtIDNumber.Size = New System.Drawing.Size(41, 16)
+        Me.txtIDNumber.Size = New System.Drawing.Size(18, 16)
         Me.txtIDNumber.TabIndex = 1
         '
         'Label2
@@ -231,12 +236,41 @@ Partial Class teachingLoad
         Me.ColumnHeader12.Text = "A.Y."
         Me.ColumnHeader12.Width = 100
         '
+        'Panel2
+        '
+        Me.Panel2.BackColor = System.Drawing.Color.White
+        Me.Panel2.Controls.Add(Me.txtIDNumber2)
+        Me.Panel2.Location = New System.Drawing.Point(875, 43)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Size = New System.Drawing.Size(34, 31)
+        Me.Panel2.TabIndex = 73
+        '
+        'txtIDNumber2
+        '
+        Me.txtIDNumber2.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txtIDNumber2.Font = New System.Drawing.Font("Helvetica", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtIDNumber2.Location = New System.Drawing.Point(3, 7)
+        Me.txtIDNumber2.Name = "txtIDNumber2"
+        Me.txtIDNumber2.Size = New System.Drawing.Size(28, 16)
+        Me.txtIDNumber2.TabIndex = 1
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(859, 50)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(10, 13)
+        Me.Label3.TabIndex = 79
+        Me.Label3.Text = "-"
+        '
         'teachingLoad
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(2, Byte), Integer), CType(CType(176, Byte), Integer), CType(CType(117, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1051, 669)
+        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.lvClass)
         Me.Controls.Add(Me.Panel9)
         Me.Controls.Add(Me.Label9)
@@ -258,6 +292,8 @@ Partial Class teachingLoad
         Me.Panel8.PerformLayout()
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
+        Me.Panel2.ResumeLayout(False)
+        Me.Panel2.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -267,10 +303,10 @@ Partial Class teachingLoad
     Friend WithEvents btnPrintMasterList As Button
     Friend WithEvents btnSearch As Button
     Friend WithEvents Panel9 As Panel
-    Friend WithEvents txtIDNumber3 As TextBox
+    Friend WithEvents txtIDNumber4 As TextBox
     Friend WithEvents Label9 As Label
     Friend WithEvents Panel8 As Panel
-    Friend WithEvents txtIDNumber2 As TextBox
+    Friend WithEvents txtIDNumber3 As TextBox
     Friend WithEvents Label8 As Label
     Friend WithEvents Panel1 As Panel
     Friend WithEvents txtIDNumber As TextBox
@@ -284,4 +320,7 @@ Partial Class teachingLoad
     Friend WithEvents ColumnHeader10 As ColumnHeader
     Friend WithEvents ColumnHeader11 As ColumnHeader
     Friend WithEvents ColumnHeader12 As ColumnHeader
+    Friend WithEvents Panel2 As Panel
+    Friend WithEvents txtIDNumber2 As TextBox
+    Friend WithEvents Label3 As Label
 End Class

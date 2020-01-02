@@ -177,9 +177,9 @@ Partial Class classSchedule
         Me.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnSearch.Font = New System.Drawing.Font("Helvetica", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnSearch.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.btnSearch.Location = New System.Drawing.Point(901, 43)
+        Me.btnSearch.Location = New System.Drawing.Point(886, 64)
         Me.btnSearch.Name = "btnSearch"
-        Me.btnSearch.Size = New System.Drawing.Size(131, 67)
+        Me.btnSearch.Size = New System.Drawing.Size(146, 31)
         Me.btnSearch.TabIndex = 78
         Me.btnSearch.Text = "Search"
         Me.btnSearch.UseVisualStyleBackColor = False
@@ -188,7 +188,7 @@ Partial Class classSchedule
         '
         Me.Panel2.BackColor = System.Drawing.Color.White
         Me.Panel2.Controls.Add(Me.cbSemester)
-        Me.Panel2.Location = New System.Drawing.Point(749, 79)
+        Me.Panel2.Location = New System.Drawing.Point(734, 64)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(146, 31)
         Me.Panel2.TabIndex = 20
@@ -209,7 +209,7 @@ Partial Class classSchedule
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Roboto", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.ForeColor = System.Drawing.Color.White
-        Me.Label7.Location = New System.Drawing.Point(687, 86)
+        Me.Label7.Location = New System.Drawing.Point(672, 71)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(56, 15)
         Me.Label7.TabIndex = 21
@@ -218,7 +218,7 @@ Partial Class classSchedule
         'Panel6
         '
         Me.Panel6.BackColor = System.Drawing.Color.White
-        Me.Panel6.Location = New System.Drawing.Point(749, 43)
+        Me.Panel6.Location = New System.Drawing.Point(734, 28)
         Me.Panel6.Name = "Panel6"
         Me.Panel6.Size = New System.Drawing.Size(146, 31)
         Me.Panel6.TabIndex = 18
@@ -229,7 +229,7 @@ Partial Class classSchedule
         Me.cbAcademicYear.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.cbAcademicYear.Font = New System.Drawing.Font("Helvetica", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cbAcademicYear.FormattingEnabled = True
-        Me.cbAcademicYear.Location = New System.Drawing.Point(752, 47)
+        Me.cbAcademicYear.Location = New System.Drawing.Point(737, 32)
         Me.cbAcademicYear.Name = "cbAcademicYear"
         Me.cbAcademicYear.Size = New System.Drawing.Size(140, 23)
         Me.cbAcademicYear.TabIndex = 15
@@ -239,7 +239,7 @@ Partial Class classSchedule
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Roboto", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.Color.White
-        Me.Label5.Location = New System.Drawing.Point(649, 50)
+        Me.Label5.Location = New System.Drawing.Point(634, 35)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(94, 15)
         Me.Label5.TabIndex = 19

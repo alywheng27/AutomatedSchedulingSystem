@@ -4,4 +4,5 @@
     Public objRoom As RoomClass
     Public objSchedule As ScheduleClass
     Public objUser As UserClass
+    Public objCurrent As CurrentClass
 End Module

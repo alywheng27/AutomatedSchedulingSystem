@@ -13,9 +13,9 @@
         Dim dsRoom = New DataSet
 
         If search = Nothing Then
-            sql = "SELECT * FROM RoomView WHERE Department = '" & objUser.getUserType & "' AND IsDeleted = 'False' "
+            sql = "SELECT * FROM RoomView WHERE Department = '" & objUser.getUserType & "' AND IsDeleted = 'False' ORDER BY Room ASC "
         Else
-            sql = "SELECT * FROM RoomView WHERE Department = '" & objUser.getUserType & "' AND (Room LIKE '%" & search & "%') AND IsDeleted = 'False' "
+            sql = "SELECT * FROM RoomView WHERE Department = '" & objUser.getUserType & "' AND (Room LIKE '%" & search & "%') AND IsDeleted = 'False' ORDER BY Room ASC "
         End If
 
         If fillData(sql, dsRoom, "tblRoom") = True Then

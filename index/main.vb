@@ -1,5 +1,5 @@
 ﻿
-Public Class main
+Public Class btnUser
 
     Private Sub btnLogout_Click(sender As Object, e As EventArgs) Handles btnLogout.Click
         index.Show()
@@ -110,7 +110,8 @@ Public Class main
         teachingLoad.Dispose()
     End Sub
 
-    Private Sub Panel1_Paint(sender As Object, e As PaintEventArgs) Handles Panel1.Paint
-
+    Private Sub btnSettings_Click(sender As Object, e As EventArgs) Handles btnSettings.Click
+        settings.Show()
+        settings.Focus()
     End Sub
 End Class

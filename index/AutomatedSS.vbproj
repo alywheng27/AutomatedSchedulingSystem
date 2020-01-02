@@ -93,6 +93,7 @@
     <Compile Include="classScheduleAU.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Class\CurrentClass.vb" />
     <Compile Include="Class\RoomClass.vb" />
     <Compile Include="Class\ScheduleClass.vb" />
     <Compile Include="Class\SubjectClass.vb" />
@@ -110,6 +111,26 @@
     </Compile>
     <Compile Include="masterListDataSet.vb">
       <DependentUpon>masterListDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="settings.Designer.vb">
+      <DependentUpon>settings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="settings.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentRegistration.Designer.vb">
+      <DependentUpon>StudentRegistration.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StudentRegistration.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentRegistrationDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StudentRegistrationDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="StudentRegistrationDataSet.vb">
+      <DependentUpon>StudentRegistrationDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="teachingLoad.Designer.vb">
       <DependentUpon>teachingLoad.vb</DependentUpon>
@@ -213,6 +234,13 @@
       <DependentUpon>masterList.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="masterListReport.rdlc" />
+    <EmbeddedResource Include="settings.resx">
+      <DependentUpon>settings.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentRegistration.resx">
+      <DependentUpon>StudentRegistration.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentRegistrationReport.rdlc" />
     <EmbeddedResource Include="teachingLoad.resx">
       <DependentUpon>teachingLoad.vb</DependentUpon>
     </EmbeddedResource>
@@ -277,6 +305,17 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
+    <None Include="StudentRegistrationDataSet.xsc">
+      <DependentUpon>StudentRegistrationDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="StudentRegistrationDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>StudentRegistrationDataSet.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="StudentRegistrationDataSet.xss">
+      <DependentUpon>StudentRegistrationDataSet.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -1,4 +1,8 @@
-﻿Public Class student
+﻿Imports System.Data
+Imports System.Data.OleDb
+Imports Microsoft.Reporting.WinForms
+
+Public Class student
     Private studentID() As Integer
 
     Public Sub listStudent(ByVal search As String)
@@ -8,9 +12,9 @@
         Dim dsStudent = New DataSet
 
         If search = Nothing Then
-            sql = "SELECT * FROM StudentView WHERE Department = '" & objUser.getUserType & "' AND IsDeleted = 'False' "
+            sql = "SELECT * FROM StudentView WHERE Department = '" & objUser.getUserType & "' AND IsDeleted = 'False' ORDER BY Surname ASC "
         Else
-            sql = "SELECT * FROM StudentView WHERE Department = '" & objUser.getUserType & "' AND (Surname LIKE '%" & search & "%' OR FirstName LIKE '%" & search & "%' OR StudentIDNumber LIKE '%" & search & "%') AND IsDeleted = 'False' "
+            sql = "SELECT * FROM StudentView WHERE Department = '" & objUser.getUserType & "' AND (Surname LIKE '%" & search & "%' OR FirstName LIKE '%" & search & "%' OR StudentIDNumber LIKE '%" & search & "%') AND IsDeleted = 'False' ORDER BY Surname ASC "
         End If
 
         If fillData(sql, dsStudent, "tblStudent") = True Then
@@ -109,5 +113,61 @@
 
     Private Sub txtSubject_TextChanged(sender As Object, e As EventArgs) Handles txtSearch.TextChanged
         listStudent(txtSearch.Text)
+    End Sub
+
+    Private Sub btnPrintCOR_Click(sender As Object, e As EventArgs) Handles btnPrintCOR.Click
+        If lvStudent.SelectedIndices.Count = 0 Then Exit Sub
+
+        Dim sql As String
+        Dim dsClass = New DataSet
+        Dim dsDay = New DataSet
+        Dim dsTime = New DataSet
+
+        sql = "SELECT * FROM ClassRegistrationView WHERE StudentID = " & studentID(lvStudent.SelectedIndices(0))
+
+        If fillData(sql, dsClass, "tblRegistration") = True Then
+            If dsClass.Tables("tblRegistration").Rows.Count > 0 Then
+                objStudent = New PersonClass(studentID(lvStudent.SelectedIndices(0)))
+                objStudent.getStudentIDNumber = dsClass.Tables("tblRegistration").Rows(0).Item("StudentIDNumber")
+
+                objStudent.getFirstName = dsClass.Tables("tblRegistration").Rows(0).Item("FirstName")
+                objStudent.getMiddleName = dsClass.Tables("tblRegistration").Rows(0).Item("MiddleInitial")
+                objStudent.getSurname = dsClass.Tables("tblRegistration").Rows(0).Item("Surname")
+                objStudent.getExtensionName = dsClass.Tables("tblRegistration").Rows(0).Item("ExtensionName")
+
+                Dim name = objStudent.getFirstName & " " & objStudent.getMiddleName & ". " & objStudent.getSurname & " " & objStudent.getExtensionName
+
+                objStudent.getCourse = dsClass.Tables("tblRegistration").Rows(0).Item("Course")
+                objStudent.getMajor = dsClass.Tables("tblRegistration").Rows(0).Item("Major")
+                objStudent.getYearLevel = dsClass.Tables("tblRegistration").Rows(0).Item("YearLevel")
+
+
+                Dim StudentNumber As New ReportParameter("StudentNumber", StrConv(objStudent.getStudentIDNumber, VbStrConv.ProperCase))
+                Dim Name1 As New ReportParameter("Name", StrConv(name, VbStrConv.ProperCase))
+                Dim Course As New ReportParameter("Course", objStudent.getCourse)
+                Dim Major As New ReportParameter("Major", objStudent.getMajor)
+                Dim YearLevel As New ReportParameter("YearLevel", objStudent.getYearLevel)
+                Dim AcademicYear As New ReportParameter("AcademicYear", objCurrent.getYear)
+                Dim Semester As New ReportParameter("Semester", objCurrent.getSemester)
+
+                StudentRegistration.rvStudentRegistration.LocalReport.SetParameters(StudentNumber)
+                StudentRegistration.rvStudentRegistration.LocalReport.SetParameters(Name1)
+                StudentRegistration.rvStudentRegistration.LocalReport.SetParameters(Course)
+                StudentRegistration.rvStudentRegistration.LocalReport.SetParameters(Major)
+                StudentRegistration.rvStudentRegistration.LocalReport.SetParameters(YearLevel)
+                StudentRegistration.rvStudentRegistration.LocalReport.SetParameters(AcademicYear)
+                StudentRegistration.rvStudentRegistration.LocalReport.SetParameters(Semester)
+
+                StudentRegistration.ClassScheduleViewTableAdapter.Fill(StudentRegistration.StudentRegistrationDataSet.ClassScheduleView, dsClass.Tables("tblRegistration").Rows(0).Item("ClassScheduleID"), objCurrent.getYear, objCurrent.getSemester)
+                StudentRegistration.rvStudentRegistration.SetDisplayMode(Microsoft.Reporting.WinForms.DisplayMode.PrintLayout)
+                StudentRegistration.rvStudentRegistration.RefreshReport()
+                StudentRegistration.ShowDialog()
+            Else
+                MsgBox("No Subject Enrolled.", vbInformation + vbOKOnly, systemName)
+            End If
+        End If
+
+        '------------------------------------------------------------------------------------------
+
     End Sub
 End Class

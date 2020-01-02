@@ -23,9 +23,9 @@ Public Class teachingLoad
         Dim dsDay = New DataSet
         Dim dsTime = New DataSet
 
-        Dim idNumber = txtIDNumber.Text & "-" & txtIDNumber2.Text & "-" & txtIDNumber3.Text
+        Dim idNumber = txtIDNumber.Text & "-" & txtIDNumber2.Text & "-" & txtIDNumber3.Text & "-" & txtIDNumber4.Text
 
-        sql = "SELECT * FROM ClassScheduleView WHERE InstructorIDNumber = '" & idNumber & "' AND IsDeleted = 'False' "
+        sql = "SELECT * FROM ClassScheduleView WHERE InstructorIDNumber = '" & idNumber & "' AND AcademicYear = '" & objCurrent.getYear & "' AND Semester = '" & objCurrent.getSemester & "' AND IsDeleted = 'False' ORDER BY Subject ASC "
 
         If fillData(sql, dsClass, "tblClass") = True Then
             If dsClass.Tables("tblClass").Rows.Count > 0 Then
@@ -150,7 +150,7 @@ Public Class teachingLoad
             masterList.rvMasterList.LocalReport.SetParameters(LabUnits)
             masterList.rvMasterList.LocalReport.SetParameters(Room)
 
-            masterList.ClassRegistrationViewTableAdapter.Fill(masterList.masterListDataSet.ClassRegistrationView, objSchedule.getClassScheduleID)
+            masterList.ClassRegistrationViewTableAdapter.Fill(masterList.masterListDataSet.ClassRegistrationView, objSchedule.getClassScheduleID, objCurrent.getYear, objCurrent.getSemester)
             masterList.rvMasterList.SetDisplayMode(Microsoft.Reporting.WinForms.DisplayMode.PrintLayout)
             masterList.rvMasterList.RefreshReport()
             masterList.ShowDialog()
@@ -177,6 +177,12 @@ Public Class teachingLoad
         If txtIDNumber3.Text = "" Then
             MsgBox("Please your ID Number.", vbInformation + vbOKOnly, systemName)
             txtIDNumber3.Focus()
+            Return False
+        End If
+
+        If txtIDNumber4.Text = "" Then
+            MsgBox("Please your ID Number.", vbInformation + vbOKOnly, systemName)
+            txtIDNumber4.Focus()
             Return False
         End If
 

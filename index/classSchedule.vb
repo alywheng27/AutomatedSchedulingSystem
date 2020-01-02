@@ -98,9 +98,9 @@
         Dim dsTime = New DataSet
 
         If searchAY = Nothing And searchSem = Nothing Then
-            sql = "SELECT * FROM ClassScheduleView WHERE IsDeleted = 'False' "
+            sql = "SELECT * FROM ClassScheduleView WHERE IsDeleted = 'False' AND AcademicYear = '" & objCurrent.getYear & "' AND Semester = '" & objCurrent.getSemester & "' ORDER BY Subject ASC "
         Else
-            sql = "SELECT * FROM ClassScheduleView WHERE (AcademicYear = '" & searchAY & "' AND Semester = '" & searchSem & "') AND  IsDeleted = 'False' "
+            sql = "SELECT * FROM ClassScheduleView WHERE (AcademicYear = '" & searchAY & "' AND Semester = '" & searchSem & "') AND  IsDeleted = 'False' ORDER BY Subject ASC  "
         End If
 
         If fillData(sql, dsClass, "tblClass") = True Then

@@ -25,17 +25,27 @@ Partial Class masterList
         Me.components = New System.ComponentModel.Container()
         Dim ReportDataSource1 As Microsoft.Reporting.WinForms.ReportDataSource = New Microsoft.Reporting.WinForms.ReportDataSource()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(masterList))
+        Me.ClassRegistrationViewBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.masterListDataSet = New AutomatedSS.masterListDataSet()
         Me.rvMasterList = New Microsoft.Reporting.WinForms.ReportViewer()
         Me.btnX = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.studentAction = New System.Windows.Forms.Label()
-        Me.ClassRegistrationViewBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.masterListDataSet = New AutomatedSS.masterListDataSet()
         Me.ClassRegistrationViewTableAdapter = New AutomatedSS.masterListDataSetTableAdapters.ClassRegistrationViewTableAdapter()
-        Me.Panel1.SuspendLayout()
         CType(Me.ClassRegistrationViewBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.masterListDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
+        '
+        'ClassRegistrationViewBindingSource
+        '
+        Me.ClassRegistrationViewBindingSource.DataMember = "ClassRegistrationView"
+        Me.ClassRegistrationViewBindingSource.DataSource = Me.masterListDataSet
+        '
+        'masterListDataSet
+        '
+        Me.masterListDataSet.DataSetName = "masterListDataSet"
+        Me.masterListDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
         'rvMasterList
         '
@@ -77,19 +87,9 @@ Partial Class masterList
         Me.studentAction.ForeColor = System.Drawing.Color.WhiteSmoke
         Me.studentAction.Location = New System.Drawing.Point(15, 15)
         Me.studentAction.Name = "studentAction"
-        Me.studentAction.Size = New System.Drawing.Size(189, 20)
+        Me.studentAction.Size = New System.Drawing.Size(151, 20)
         Me.studentAction.TabIndex = 0
-        Me.studentAction.Text = "Room Information / Add"
-        '
-        'ClassRegistrationViewBindingSource
-        '
-        Me.ClassRegistrationViewBindingSource.DataMember = "ClassRegistrationView"
-        Me.ClassRegistrationViewBindingSource.DataSource = Me.masterListDataSet
-        '
-        'masterListDataSet
-        '
-        Me.masterListDataSet.DataSetName = "masterListDataSet"
-        Me.masterListDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        Me.studentAction.Text = "Master List Report"
         '
         'ClassRegistrationViewTableAdapter
         '
@@ -107,10 +107,10 @@ Partial Class masterList
         Me.Name = "masterList"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "masterList"
-        Me.Panel1.ResumeLayout(False)
-        Me.Panel1.PerformLayout()
         CType(Me.ClassRegistrationViewBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.masterListDataSet, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel1.ResumeLayout(False)
+        Me.Panel1.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub

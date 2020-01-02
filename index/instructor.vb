@@ -13,9 +13,9 @@
         Dim dsInstructor = New DataSet
 
         If search = Nothing Then
-            sql = "SELECT * FROM InstructorView WHERE Department = '" & objUser.getUserType & "' AND IsDeleted = 'False' "
+            sql = "SELECT * FROM InstructorView WHERE Department = '" & objUser.getUserType & "' AND IsDeleted = 'False' ORDER BY Surname ASC "
         Else
-            sql = "SELECT * FROM InstructorView WHERE Department = '" & objUser.getUserType & "' AND (Surname LIKE '%" & search & "%' OR FirstName LIKE '%" & search & "%' OR StudentIDNumber LIKE '%" & search & "%') AND IsDeleted = 'False' "
+            sql = "SELECT * FROM InstructorView WHERE Department = '" & objUser.getUserType & "' AND (Surname LIKE '%" & search & "%' OR FirstName LIKE '%" & search & "%' OR StudentIDNumber LIKE '%" & search & "%') AND IsDeleted = 'False' ORDER BY Surname ASC "
         End If
 
         If fillData(sql, dsInstructor, "tblInstructor") = True Then

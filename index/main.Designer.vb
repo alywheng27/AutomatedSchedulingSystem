@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class main
+Partial Class btnUser
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -22,8 +22,10 @@ Partial Class main
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(main))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(btnUser))
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.btnSettings = New System.Windows.Forms.Button()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.Panel10 = New System.Windows.Forms.Panel()
         Me.btnLogout = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -50,6 +52,8 @@ Partial Class main
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(39, Byte), Integer), CType(CType(56, Byte), Integer))
+        Me.Panel1.Controls.Add(Me.btnSettings)
+        Me.Panel1.Controls.Add(Me.Button1)
         Me.Panel1.Controls.Add(Me.Panel10)
         Me.Panel1.Controls.Add(Me.btnLogout)
         Me.Panel1.Controls.Add(Me.Label1)
@@ -58,6 +62,34 @@ Partial Class main
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(1283, 50)
         Me.Panel1.TabIndex = 0
+        '
+        'btnSettings
+        '
+        Me.btnSettings.BackColor = System.Drawing.Color.Transparent
+        Me.btnSettings.BackgroundImage = CType(resources.GetObject("btnSettings.BackgroundImage"), System.Drawing.Image)
+        Me.btnSettings.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.btnSettings.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(42, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(68, Byte), Integer))
+        Me.btnSettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnSettings.ForeColor = System.Drawing.Color.Transparent
+        Me.btnSettings.Location = New System.Drawing.Point(1183, 13)
+        Me.btnSettings.Name = "btnSettings"
+        Me.btnSettings.Size = New System.Drawing.Size(25, 25)
+        Me.btnSettings.TabIndex = 14
+        Me.btnSettings.UseVisualStyleBackColor = False
+        '
+        'Button1
+        '
+        Me.Button1.BackColor = System.Drawing.Color.Transparent
+        Me.Button1.BackgroundImage = CType(resources.GetObject("Button1.BackgroundImage"), System.Drawing.Image)
+        Me.Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.Button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(42, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(68, Byte), Integer))
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button1.ForeColor = System.Drawing.Color.Transparent
+        Me.Button1.Location = New System.Drawing.Point(1214, 13)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(25, 25)
+        Me.Button1.TabIndex = 13
+        Me.Button1.UseVisualStyleBackColor = False
         '
         'Panel10
         '
@@ -318,7 +350,7 @@ Partial Class main
         Me.Label2.Text = "Automated" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Scheduling"
         Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
-        'main
+        'btnUser
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -332,7 +364,7 @@ Partial Class main
         Me.IsMdiContainer = True
         Me.MaximizeBox = False
         Me.MinimizeBox = False
-        Me.Name = "main"
+        Me.Name = "btnUser"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "main"
         Me.Panel1.ResumeLayout(False)
@@ -363,4 +395,6 @@ Partial Class main
     Friend WithEvents Panel9 As Panel
     Friend WithEvents btnMasterList As Button
     Friend WithEvents Panel10 As Panel
+    Friend WithEvents Button1 As Button
+    Friend WithEvents btnSettings As Button
 End Class

@@ -36,6 +36,7 @@ Partial Class student
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.txtSearch = New System.Windows.Forms.TextBox()
         Me.Label7 = New System.Windows.Forms.Label()
+        Me.btnPrintCOR = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -176,12 +177,32 @@ Partial Class student
         Me.Label7.TabIndex = 69
         Me.Label7.Text = "Search"
         '
+        'btnPrintCOR
+        '
+        Me.btnPrintCOR.BackColor = System.Drawing.Color.Transparent
+        Me.btnPrintCOR.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.btnPrintCOR.FlatAppearance.BorderSize = 0
+        Me.btnPrintCOR.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(12, Byte), Integer), CType(CType(143, Byte), Integer), CType(CType(99, Byte), Integer))
+        Me.btnPrintCOR.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnPrintCOR.Font = New System.Drawing.Font("Helvetica", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnPrintCOR.ForeColor = System.Drawing.SystemColors.Window
+        Me.btnPrintCOR.Image = CType(resources.GetObject("btnPrintCOR.Image"), System.Drawing.Image)
+        Me.btnPrintCOR.Location = New System.Drawing.Point(565, 12)
+        Me.btnPrintCOR.Name = "btnPrintCOR"
+        Me.btnPrintCOR.Size = New System.Drawing.Size(103, 98)
+        Me.btnPrintCOR.TabIndex = 71
+        Me.btnPrintCOR.Text = "View COR"
+        Me.btnPrintCOR.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.btnPrintCOR.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
+        Me.btnPrintCOR.UseVisualStyleBackColor = False
+        '
         'student
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(2, Byte), Integer), CType(CType(176, Byte), Integer), CType(CType(117, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1051, 669)
+        Me.Controls.Add(Me.btnPrintCOR)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.Label1)
@@ -214,4 +235,5 @@ Partial Class student
     Friend WithEvents Panel1 As Panel
     Friend WithEvents txtSearch As TextBox
     Friend WithEvents Label7 As Label
+    Friend WithEvents btnPrintCOR As Button
 End Class
