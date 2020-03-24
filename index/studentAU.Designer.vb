@@ -133,21 +133,21 @@ Partial Class studentAU
         'studentAction
         '
         Me.studentAction.AutoSize = True
-        Me.studentAction.Font = New System.Drawing.Font("Helvetica", 12.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.studentAction.Font = New System.Drawing.Font("Arial", 12.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.studentAction.ForeColor = System.Drawing.Color.WhiteSmoke
         Me.studentAction.Location = New System.Drawing.Point(15, 15)
         Me.studentAction.Name = "studentAction"
-        Me.studentAction.Size = New System.Drawing.Size(203, 20)
+        Me.studentAction.Size = New System.Drawing.Size(194, 19)
         Me.studentAction.TabIndex = 0
         Me.studentAction.Text = "Student Information / Add"
         '
         'txtIDNumber
         '
         Me.txtIDNumber.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.txtIDNumber.Font = New System.Drawing.Font("Helvetica", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtIDNumber.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtIDNumber.Location = New System.Drawing.Point(3, 7)
         Me.txtIDNumber.Name = "txtIDNumber"
-        Me.txtIDNumber.Size = New System.Drawing.Size(114, 16)
+        Me.txtIDNumber.Size = New System.Drawing.Size(114, 15)
         Me.txtIDNumber.TabIndex = 1
         '
         'Panel2
@@ -162,22 +162,22 @@ Partial Class studentAU
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Roboto", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.White
         Me.Label2.Location = New System.Drawing.Point(239, 34)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(116, 15)
+        Me.Label2.Size = New System.Drawing.Size(120, 16)
         Me.Label2.TabIndex = 3
         Me.Label2.Text = "Student ID Number"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Roboto", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.White
         Me.Label3.Location = New System.Drawing.Point(6, 244)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(70, 15)
+        Me.Label3.Size = New System.Drawing.Size(73, 16)
         Me.Label3.TabIndex = 5
         Me.Label3.Text = "First Name"
         '
@@ -193,20 +193,20 @@ Partial Class studentAU
         'txtFirstName
         '
         Me.txtFirstName.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.txtFirstName.Font = New System.Drawing.Font("Helvetica", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtFirstName.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtFirstName.Location = New System.Drawing.Point(3, 7)
         Me.txtFirstName.Name = "txtFirstName"
-        Me.txtFirstName.Size = New System.Drawing.Size(193, 16)
+        Me.txtFirstName.Size = New System.Drawing.Size(193, 15)
         Me.txtFirstName.TabIndex = 1
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Roboto", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.White
         Me.Label4.Location = New System.Drawing.Point(239, 244)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(79, 15)
+        Me.Label4.Size = New System.Drawing.Size(82, 16)
         Me.Label4.TabIndex = 7
         Me.Label4.Text = "Middle Initial"
         '
@@ -223,21 +223,21 @@ Partial Class studentAU
         '
         Me.txtMiddleName.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.txtMiddleName.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.txtMiddleName.Font = New System.Drawing.Font("Helvetica", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtMiddleName.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtMiddleName.Location = New System.Drawing.Point(3, 7)
         Me.txtMiddleName.MaxLength = 1
         Me.txtMiddleName.Name = "txtMiddleName"
-        Me.txtMiddleName.Size = New System.Drawing.Size(193, 16)
+        Me.txtMiddleName.Size = New System.Drawing.Size(193, 15)
         Me.txtMiddleName.TabIndex = 1
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Roboto", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.Color.White
         Me.Label5.Location = New System.Drawing.Point(6, 315)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(59, 15)
+        Me.Label5.Size = New System.Drawing.Size(62, 16)
         Me.Label5.TabIndex = 9
         Me.Label5.Text = "Surname"
         '
@@ -253,20 +253,20 @@ Partial Class studentAU
         'txtSurname
         '
         Me.txtSurname.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.txtSurname.Font = New System.Drawing.Font("Helvetica", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtSurname.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtSurname.Location = New System.Drawing.Point(3, 7)
         Me.txtSurname.Name = "txtSurname"
-        Me.txtSurname.Size = New System.Drawing.Size(193, 16)
+        Me.txtSurname.Size = New System.Drawing.Size(193, 15)
         Me.txtSurname.TabIndex = 1
         '
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Roboto", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.ForeColor = System.Drawing.Color.White
         Me.Label6.Location = New System.Drawing.Point(239, 315)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(100, 15)
+        Me.Label6.Size = New System.Drawing.Size(106, 16)
         Me.Label6.TabIndex = 11
         Me.Label6.Text = "Extension Name"
         '
@@ -282,20 +282,20 @@ Partial Class studentAU
         'txtExtensionName
         '
         Me.txtExtensionName.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.txtExtensionName.Font = New System.Drawing.Font("Helvetica", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtExtensionName.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtExtensionName.Location = New System.Drawing.Point(3, 7)
         Me.txtExtensionName.Name = "txtExtensionName"
-        Me.txtExtensionName.Size = New System.Drawing.Size(193, 16)
+        Me.txtExtensionName.Size = New System.Drawing.Size(193, 15)
         Me.txtExtensionName.TabIndex = 1
         '
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Roboto", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.ForeColor = System.Drawing.Color.White
         Me.Label7.Location = New System.Drawing.Point(6, 34)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(75, 15)
+        Me.Label7.Size = New System.Drawing.Size(78, 16)
         Me.Label7.TabIndex = 13
         Me.Label7.Text = "Department"
         '
@@ -312,21 +312,21 @@ Partial Class studentAU
         '
         Me.cbDepartment.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cbDepartment.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.cbDepartment.Font = New System.Drawing.Font("Helvetica", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cbDepartment.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cbDepartment.FormattingEnabled = True
         Me.cbDepartment.Location = New System.Drawing.Point(0, 4)
         Me.cbDepartment.Name = "cbDepartment"
-        Me.cbDepartment.Size = New System.Drawing.Size(432, 23)
+        Me.cbDepartment.Size = New System.Drawing.Size(432, 24)
         Me.cbDepartment.TabIndex = 14
         '
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Font = New System.Drawing.Font("Roboto", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.ForeColor = System.Drawing.Color.White
         Me.Label8.Location = New System.Drawing.Point(9, 106)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(48, 15)
+        Me.Label8.Size = New System.Drawing.Size(51, 16)
         Me.Label8.TabIndex = 15
         Me.Label8.Text = "Course"
         '
@@ -343,21 +343,21 @@ Partial Class studentAU
         '
         Me.cbCourse.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cbCourse.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.cbCourse.Font = New System.Drawing.Font("Helvetica", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cbCourse.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cbCourse.FormattingEnabled = True
         Me.cbCourse.Location = New System.Drawing.Point(0, 4)
         Me.cbCourse.Name = "cbCourse"
-        Me.cbCourse.Size = New System.Drawing.Size(199, 23)
+        Me.cbCourse.Size = New System.Drawing.Size(199, 24)
         Me.cbCourse.TabIndex = 14
         '
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Font = New System.Drawing.Font("Roboto", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label9.ForeColor = System.Drawing.Color.White
         Me.Label9.Location = New System.Drawing.Point(242, 106)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(40, 15)
+        Me.Label9.Size = New System.Drawing.Size(42, 16)
         Me.Label9.TabIndex = 17
         Me.Label9.Text = "Major"
         '
@@ -374,21 +374,21 @@ Partial Class studentAU
         '
         Me.cbMajor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cbMajor.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.cbMajor.Font = New System.Drawing.Font("Helvetica", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cbMajor.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cbMajor.FormattingEnabled = True
         Me.cbMajor.Location = New System.Drawing.Point(0, 4)
         Me.cbMajor.Name = "cbMajor"
-        Me.cbMajor.Size = New System.Drawing.Size(199, 23)
+        Me.cbMajor.Size = New System.Drawing.Size(199, 24)
         Me.cbMajor.TabIndex = 14
         '
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.Font = New System.Drawing.Font("Roboto", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label10.ForeColor = System.Drawing.Color.White
-        Me.Label10.Location = New System.Drawing.Point(6, 454)
+        Me.Label10.Location = New System.Drawing.Point(6, 383)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(68, 15)
+        Me.Label10.Size = New System.Drawing.Size(73, 16)
         Me.Label10.TabIndex = 19
         Me.Label10.Text = "Year Level"
         '
@@ -396,7 +396,7 @@ Partial Class studentAU
         '
         Me.Panel10.BackColor = System.Drawing.Color.White
         Me.Panel10.Controls.Add(Me.cbYearLevel)
-        Me.Panel10.Location = New System.Drawing.Point(6, 474)
+        Me.Panel10.Location = New System.Drawing.Point(6, 403)
         Me.Panel10.Name = "Panel10"
         Me.Panel10.Size = New System.Drawing.Size(199, 31)
         Me.Panel10.TabIndex = 18
@@ -405,21 +405,21 @@ Partial Class studentAU
         '
         Me.cbYearLevel.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cbYearLevel.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.cbYearLevel.Font = New System.Drawing.Font("Helvetica", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cbYearLevel.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cbYearLevel.FormattingEnabled = True
         Me.cbYearLevel.Location = New System.Drawing.Point(0, 4)
         Me.cbYearLevel.Name = "cbYearLevel"
-        Me.cbYearLevel.Size = New System.Drawing.Size(199, 23)
+        Me.cbYearLevel.Size = New System.Drawing.Size(199, 24)
         Me.cbYearLevel.TabIndex = 14
         '
         'Label11
         '
         Me.Label11.AutoSize = True
-        Me.Label11.Font = New System.Drawing.Font("Roboto", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label11.ForeColor = System.Drawing.Color.White
-        Me.Label11.Location = New System.Drawing.Point(6, 388)
+        Me.Label11.Location = New System.Drawing.Point(239, 383)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(49, 15)
+        Me.Label11.Size = New System.Drawing.Size(53, 16)
         Me.Label11.TabIndex = 21
         Me.Label11.Text = "Gender"
         '
@@ -427,7 +427,7 @@ Partial Class studentAU
         '
         Me.Panel11.BackColor = System.Drawing.Color.White
         Me.Panel11.Controls.Add(Me.cbGender)
-        Me.Panel11.Location = New System.Drawing.Point(6, 408)
+        Me.Panel11.Location = New System.Drawing.Point(239, 403)
         Me.Panel11.Name = "Panel11"
         Me.Panel11.Size = New System.Drawing.Size(199, 31)
         Me.Panel11.TabIndex = 20
@@ -436,21 +436,21 @@ Partial Class studentAU
         '
         Me.cbGender.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cbGender.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.cbGender.Font = New System.Drawing.Font("Helvetica", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cbGender.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cbGender.FormattingEnabled = True
         Me.cbGender.Location = New System.Drawing.Point(0, 4)
         Me.cbGender.Name = "cbGender"
-        Me.cbGender.Size = New System.Drawing.Size(199, 23)
+        Me.cbGender.Size = New System.Drawing.Size(199, 24)
         Me.cbGender.TabIndex = 14
         '
         'Label12
         '
         Me.Label12.AutoSize = True
-        Me.Label12.Font = New System.Drawing.Font("Roboto", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label12.ForeColor = System.Drawing.Color.White
-        Me.Label12.Location = New System.Drawing.Point(239, 388)
+        Me.Label12.Location = New System.Drawing.Point(6, 454)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(71, 15)
+        Me.Label12.Size = New System.Drawing.Size(73, 16)
         Me.Label12.TabIndex = 23
         Me.Label12.Text = "Civil Status"
         '
@@ -458,7 +458,7 @@ Partial Class studentAU
         '
         Me.Panel12.BackColor = System.Drawing.Color.White
         Me.Panel12.Controls.Add(Me.cbCivilStatus)
-        Me.Panel12.Location = New System.Drawing.Point(239, 408)
+        Me.Panel12.Location = New System.Drawing.Point(6, 474)
         Me.Panel12.Name = "Panel12"
         Me.Panel12.Size = New System.Drawing.Size(199, 31)
         Me.Panel12.TabIndex = 22
@@ -467,11 +467,11 @@ Partial Class studentAU
         '
         Me.cbCivilStatus.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cbCivilStatus.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.cbCivilStatus.Font = New System.Drawing.Font("Helvetica", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cbCivilStatus.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cbCivilStatus.FormattingEnabled = True
         Me.cbCivilStatus.Location = New System.Drawing.Point(0, 4)
         Me.cbCivilStatus.Name = "cbCivilStatus"
-        Me.cbCivilStatus.Size = New System.Drawing.Size(199, 23)
+        Me.cbCivilStatus.Size = New System.Drawing.Size(199, 24)
         Me.cbCivilStatus.TabIndex = 14
         '
         'GroupBox1
@@ -483,21 +483,21 @@ Partial Class studentAU
         Me.GroupBox1.Controls.Add(Me.studentImage)
         Me.GroupBox1.Controls.Add(Me.Label12)
         Me.GroupBox1.Controls.Add(Me.Panel2)
-        Me.GroupBox1.Controls.Add(Me.Panel12)
         Me.GroupBox1.Controls.Add(Me.Label2)
-        Me.GroupBox1.Controls.Add(Me.Label11)
         Me.GroupBox1.Controls.Add(Me.Panel3)
-        Me.GroupBox1.Controls.Add(Me.Panel11)
+        Me.GroupBox1.Controls.Add(Me.Panel12)
         Me.GroupBox1.Controls.Add(Me.Label3)
         Me.GroupBox1.Controls.Add(Me.Label10)
+        Me.GroupBox1.Controls.Add(Me.Label11)
         Me.GroupBox1.Controls.Add(Me.Panel4)
+        Me.GroupBox1.Controls.Add(Me.Panel11)
         Me.GroupBox1.Controls.Add(Me.Panel10)
         Me.GroupBox1.Controls.Add(Me.Label4)
         Me.GroupBox1.Controls.Add(Me.Panel5)
         Me.GroupBox1.Controls.Add(Me.Label5)
         Me.GroupBox1.Controls.Add(Me.Panel6)
         Me.GroupBox1.Controls.Add(Me.Label6)
-        Me.GroupBox1.Font = New System.Drawing.Font("Roboto", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox1.ForeColor = System.Drawing.Color.White
         Me.GroupBox1.Location = New System.Drawing.Point(12, 79)
         Me.GroupBox1.Name = "GroupBox1"
@@ -511,7 +511,7 @@ Partial Class studentAU
         Me.Label13.AutoSize = True
         Me.Label13.Location = New System.Drawing.Point(365, 61)
         Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(13, 15)
+        Me.Label13.Size = New System.Drawing.Size(12, 16)
         Me.Label13.TabIndex = 32
         Me.Label13.Text = "-"
         '
@@ -527,17 +527,17 @@ Partial Class studentAU
         'txtIDNumber2
         '
         Me.txtIDNumber2.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.txtIDNumber2.Font = New System.Drawing.Font("Helvetica", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtIDNumber2.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtIDNumber2.Location = New System.Drawing.Point(3, 7)
         Me.txtIDNumber2.Name = "txtIDNumber2"
-        Me.txtIDNumber2.Size = New System.Drawing.Size(48, 16)
+        Me.txtIDNumber2.Size = New System.Drawing.Size(48, 15)
         Me.txtIDNumber2.TabIndex = 1
         '
         'btnSelectImage
         '
         Me.btnSelectImage.BackColor = System.Drawing.Color.FromArgb(CType(CType(60, Byte), Integer), CType(CType(34, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(63, Byte), Integer))
         Me.btnSelectImage.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnSelectImage.Font = New System.Drawing.Font("Helvetica", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnSelectImage.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnSelectImage.ForeColor = System.Drawing.Color.White
         Me.btnSelectImage.Location = New System.Drawing.Point(239, 180)
         Me.btnSelectImage.Name = "btnSelectImage"
@@ -549,11 +549,11 @@ Partial Class studentAU
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Roboto", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.White
         Me.Label1.Location = New System.Drawing.Point(9, 34)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(43, 15)
+        Me.Label1.Size = New System.Drawing.Size(46, 16)
         Me.Label1.TabIndex = 25
         Me.Label1.Text = "Image"
         '
@@ -576,7 +576,7 @@ Partial Class studentAU
         Me.GroupBox2.Controls.Add(Me.Label8)
         Me.GroupBox2.Controls.Add(Me.Panel9)
         Me.GroupBox2.Controls.Add(Me.Label9)
-        Me.GroupBox2.Font = New System.Drawing.Font("Roboto", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox2.ForeColor = System.Drawing.Color.White
         Me.GroupBox2.Location = New System.Drawing.Point(465, 79)
         Me.GroupBox2.Name = "GroupBox2"
@@ -591,7 +591,7 @@ Partial Class studentAU
         Me.GroupBox3.Controls.Add(Me.Label16)
         Me.GroupBox3.Controls.Add(Me.Panel15)
         Me.GroupBox3.Controls.Add(Me.Label15)
-        Me.GroupBox3.Font = New System.Drawing.Font("Roboto", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox3.ForeColor = System.Drawing.Color.White
         Me.GroupBox3.Location = New System.Drawing.Point(465, 259)
         Me.GroupBox3.Name = "GroupBox3"
@@ -612,20 +612,20 @@ Partial Class studentAU
         'txtEmailAddress
         '
         Me.txtEmailAddress.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.txtEmailAddress.Font = New System.Drawing.Font("Helvetica", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtEmailAddress.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtEmailAddress.Location = New System.Drawing.Point(3, 7)
         Me.txtEmailAddress.Name = "txtEmailAddress"
-        Me.txtEmailAddress.Size = New System.Drawing.Size(426, 16)
+        Me.txtEmailAddress.Size = New System.Drawing.Size(426, 15)
         Me.txtEmailAddress.TabIndex = 1
         '
         'Label16
         '
         Me.Label16.AutoSize = True
-        Me.Label16.Font = New System.Drawing.Font("Roboto", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label16.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label16.ForeColor = System.Drawing.Color.White
         Me.Label16.Location = New System.Drawing.Point(6, 102)
         Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(89, 15)
+        Me.Label16.Size = New System.Drawing.Size(96, 16)
         Me.Label16.TabIndex = 7
         Me.Label16.Text = "Email Address"
         '
@@ -641,21 +641,21 @@ Partial Class studentAU
         'txtContactNumber
         '
         Me.txtContactNumber.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.txtContactNumber.Font = New System.Drawing.Font("Helvetica", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtContactNumber.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtContactNumber.Location = New System.Drawing.Point(3, 7)
         Me.txtContactNumber.MaxLength = 11
         Me.txtContactNumber.Name = "txtContactNumber"
-        Me.txtContactNumber.Size = New System.Drawing.Size(426, 16)
+        Me.txtContactNumber.Size = New System.Drawing.Size(426, 15)
         Me.txtContactNumber.TabIndex = 1
         '
         'Label15
         '
         Me.Label15.AutoSize = True
-        Me.Label15.Font = New System.Drawing.Font("Roboto", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label15.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label15.ForeColor = System.Drawing.Color.White
         Me.Label15.Location = New System.Drawing.Point(6, 31)
         Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(100, 15)
+        Me.Label15.Size = New System.Drawing.Size(104, 16)
         Me.Label15.TabIndex = 5
         Me.Label15.Text = "Contact Number"
         '
@@ -665,7 +665,7 @@ Partial Class studentAU
         Me.GroupBox4.Controls.Add(Me.Label17)
         Me.GroupBox4.Controls.Add(Me.Panel18)
         Me.GroupBox4.Controls.Add(Me.Label18)
-        Me.GroupBox4.Font = New System.Drawing.Font("Roboto", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox4.ForeColor = System.Drawing.Color.White
         Me.GroupBox4.Location = New System.Drawing.Point(466, 431)
         Me.GroupBox4.Name = "GroupBox4"
@@ -686,20 +686,20 @@ Partial Class studentAU
         'txtPermanentAddress
         '
         Me.txtPermanentAddress.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.txtPermanentAddress.Font = New System.Drawing.Font("Helvetica", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtPermanentAddress.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtPermanentAddress.Location = New System.Drawing.Point(3, 7)
         Me.txtPermanentAddress.Name = "txtPermanentAddress"
-        Me.txtPermanentAddress.Size = New System.Drawing.Size(426, 16)
+        Me.txtPermanentAddress.Size = New System.Drawing.Size(426, 15)
         Me.txtPermanentAddress.TabIndex = 1
         '
         'Label17
         '
         Me.Label17.AutoSize = True
-        Me.Label17.Font = New System.Drawing.Font("Roboto", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label17.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label17.ForeColor = System.Drawing.Color.White
         Me.Label17.Location = New System.Drawing.Point(6, 102)
         Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(121, 15)
+        Me.Label17.Size = New System.Drawing.Size(127, 16)
         Me.Label17.TabIndex = 7
         Me.Label17.Text = "Permanent Address"
         '
@@ -715,20 +715,20 @@ Partial Class studentAU
         'txtHomeAddress
         '
         Me.txtHomeAddress.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.txtHomeAddress.Font = New System.Drawing.Font("Helvetica", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtHomeAddress.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtHomeAddress.Location = New System.Drawing.Point(3, 7)
         Me.txtHomeAddress.Name = "txtHomeAddress"
-        Me.txtHomeAddress.Size = New System.Drawing.Size(426, 16)
+        Me.txtHomeAddress.Size = New System.Drawing.Size(426, 15)
         Me.txtHomeAddress.TabIndex = 1
         '
         'Label18
         '
         Me.Label18.AutoSize = True
-        Me.Label18.Font = New System.Drawing.Font("Roboto", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label18.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label18.ForeColor = System.Drawing.Color.White
         Me.Label18.Location = New System.Drawing.Point(6, 31)
         Me.Label18.Name = "Label18"
-        Me.Label18.Size = New System.Drawing.Size(92, 15)
+        Me.Label18.Size = New System.Drawing.Size(99, 16)
         Me.Label18.TabIndex = 5
         Me.Label18.Text = "Home Address"
         '
@@ -736,7 +736,7 @@ Partial Class studentAU
         '
         Me.btnSubmit.BackColor = System.Drawing.Color.MediumSeaGreen
         Me.btnSubmit.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnSubmit.Font = New System.Drawing.Font("Helvetica", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnSubmit.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnSubmit.ForeColor = System.Drawing.Color.White
         Me.btnSubmit.Location = New System.Drawing.Point(743, 609)
         Me.btnSubmit.Name = "btnSubmit"
@@ -749,7 +749,7 @@ Partial Class studentAU
         '
         Me.btnCancel.BackColor = System.Drawing.Color.Gray
         Me.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnCancel.Font = New System.Drawing.Font("Helvetica", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnCancel.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnCancel.ForeColor = System.Drawing.Color.White
         Me.btnCancel.Location = New System.Drawing.Point(572, 609)
         Me.btnCancel.Name = "btnCancel"
@@ -762,7 +762,7 @@ Partial Class studentAU
         '
         Me.btnUpdate.BackColor = System.Drawing.Color.MediumSeaGreen
         Me.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnUpdate.Font = New System.Drawing.Font("Helvetica", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnUpdate.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnUpdate.ForeColor = System.Drawing.Color.White
         Me.btnUpdate.Location = New System.Drawing.Point(743, 609)
         Me.btnUpdate.Name = "btnUpdate"

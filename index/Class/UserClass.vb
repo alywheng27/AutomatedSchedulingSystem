@@ -1,5 +1,6 @@
 ﻿Public Class UserClass
     Private userID As Integer
+    Private userTypeID As Integer
 
     Private username As String
     Private userType As String
@@ -33,6 +34,15 @@
         End Get
         Set(value As String)
             userType = value
+        End Set
+    End Property
+
+    Public Property getUserTypeID As Integer
+        Get
+            Return userTypeID
+        End Get
+        Set(value As Integer)
+            userTypeID = value
         End Set
     End Property
 

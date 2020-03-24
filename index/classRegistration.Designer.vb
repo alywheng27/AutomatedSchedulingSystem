@@ -87,18 +87,18 @@ Partial Class classRegistration
         Me.Label1.AccessibleDescription = ""
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.Transparent
-        Me.Label1.Font = New System.Drawing.Font("Helvetica", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Font = New System.Drawing.Font("Arial", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(42, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(68, Byte), Integer))
         Me.Label1.Location = New System.Drawing.Point(13, 43)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(205, 28)
+        Me.Label1.Size = New System.Drawing.Size(207, 27)
         Me.Label1.TabIndex = 28
         Me.Label1.Text = "Class Registration"
         '
         'lvEnrolled
         '
         Me.lvEnrolled.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader1, Me.ColumnHeader3, Me.ColumnHeader4, Me.ColumnHeader2})
-        Me.lvEnrolled.Font = New System.Drawing.Font("Helvetica", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lvEnrolled.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lvEnrolled.ForeColor = System.Drawing.Color.Black
         Me.lvEnrolled.FullRowSelect = True
         Me.lvEnrolled.GridLines = True
@@ -150,31 +150,31 @@ Partial Class classRegistration
         'txtIDNumber
         '
         Me.txtIDNumber.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.txtIDNumber.Font = New System.Drawing.Font("Helvetica", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtIDNumber.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtIDNumber.Location = New System.Drawing.Point(3, 7)
         Me.txtIDNumber.Name = "txtIDNumber"
-        Me.txtIDNumber.Size = New System.Drawing.Size(110, 16)
+        Me.txtIDNumber.Size = New System.Drawing.Size(110, 15)
         Me.txtIDNumber.TabIndex = 1
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("HelveticaNeue-Light", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.WhiteSmoke
         Me.Label3.Location = New System.Drawing.Point(200, 116)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(117, 16)
+        Me.Label3.Size = New System.Drawing.Size(120, 16)
         Me.Label3.TabIndex = 33
         Me.Label3.Text = "Student ID Number"
         '
         'Label11
         '
         Me.Label11.AutoSize = True
-        Me.Label11.Font = New System.Drawing.Font("HelveticaNeue-Light", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label11.ForeColor = System.Drawing.Color.WhiteSmoke
         Me.Label11.Location = New System.Drawing.Point(15, 365)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(50, 16)
+        Me.Label11.Size = New System.Drawing.Size(53, 16)
         Me.Label11.TabIndex = 45
         Me.Label11.Text = "Gender"
         '
@@ -191,10 +191,10 @@ Partial Class classRegistration
         '
         Me.txtName.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.txtName.Enabled = False
-        Me.txtName.Font = New System.Drawing.Font("Helvetica", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtName.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtName.Location = New System.Drawing.Point(3, 8)
         Me.txtName.Name = "txtName"
-        Me.txtName.Size = New System.Drawing.Size(378, 16)
+        Me.txtName.Size = New System.Drawing.Size(378, 15)
         Me.txtName.TabIndex = 1
         '
         'Panel11
@@ -210,31 +210,31 @@ Partial Class classRegistration
         '
         Me.txtGender.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.txtGender.Enabled = False
-        Me.txtGender.Font = New System.Drawing.Font("Helvetica", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtGender.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtGender.Location = New System.Drawing.Point(3, 7)
         Me.txtGender.Name = "txtGender"
-        Me.txtGender.Size = New System.Drawing.Size(378, 16)
+        Me.txtGender.Size = New System.Drawing.Size(378, 15)
         Me.txtGender.TabIndex = 2
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("HelveticaNeue-Light", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.WhiteSmoke
         Me.Label4.Location = New System.Drawing.Point(15, 301)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(42, 16)
+        Me.Label4.Size = New System.Drawing.Size(45, 16)
         Me.Label4.TabIndex = 35
         Me.Label4.Text = "Name"
         '
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.Font = New System.Drawing.Font("HelveticaNeue-Light", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label10.ForeColor = System.Drawing.Color.WhiteSmoke
         Me.Label10.Location = New System.Drawing.Point(15, 432)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(66, 16)
+        Me.Label10.Size = New System.Drawing.Size(73, 16)
         Me.Label10.TabIndex = 43
         Me.Label10.Text = "Year Level"
         '
@@ -251,10 +251,10 @@ Partial Class classRegistration
         '
         Me.txtYearLevel.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.txtYearLevel.Enabled = False
-        Me.txtYearLevel.Font = New System.Drawing.Font("Helvetica", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtYearLevel.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtYearLevel.Location = New System.Drawing.Point(3, 7)
         Me.txtYearLevel.Name = "txtYearLevel"
-        Me.txtYearLevel.Size = New System.Drawing.Size(378, 16)
+        Me.txtYearLevel.Size = New System.Drawing.Size(378, 15)
         Me.txtYearLevel.TabIndex = 3
         '
         'Panel8
@@ -270,20 +270,20 @@ Partial Class classRegistration
         '
         Me.txtCourse.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.txtCourse.Enabled = False
-        Me.txtCourse.Font = New System.Drawing.Font("Helvetica", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtCourse.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtCourse.Location = New System.Drawing.Point(3, 7)
         Me.txtCourse.Name = "txtCourse"
-        Me.txtCourse.Size = New System.Drawing.Size(378, 16)
+        Me.txtCourse.Size = New System.Drawing.Size(378, 15)
         Me.txtCourse.TabIndex = 4
         '
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Font = New System.Drawing.Font("HelveticaNeue-Light", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.ForeColor = System.Drawing.Color.WhiteSmoke
         Me.Label8.Location = New System.Drawing.Point(15, 499)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(48, 16)
+        Me.Label8.Size = New System.Drawing.Size(51, 16)
         Me.Label8.TabIndex = 51
         Me.Label8.Text = "Course"
         '
@@ -300,20 +300,20 @@ Partial Class classRegistration
         '
         Me.txtMajor.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.txtMajor.Enabled = False
-        Me.txtMajor.Font = New System.Drawing.Font("Helvetica", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtMajor.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtMajor.Location = New System.Drawing.Point(0, 7)
         Me.txtMajor.Name = "txtMajor"
-        Me.txtMajor.Size = New System.Drawing.Size(381, 16)
+        Me.txtMajor.Size = New System.Drawing.Size(381, 15)
         Me.txtMajor.TabIndex = 54
         '
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Font = New System.Drawing.Font("HelveticaNeue-Light", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label9.ForeColor = System.Drawing.Color.WhiteSmoke
         Me.Label9.Location = New System.Drawing.Point(15, 564)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(39, 16)
+        Me.Label9.Size = New System.Drawing.Size(42, 16)
         Me.Label9.TabIndex = 53
         Me.Label9.Text = "Major"
         '
@@ -322,7 +322,7 @@ Partial Class classRegistration
         Me.btnSearch.BackColor = System.Drawing.Color.FromArgb(CType(CType(23, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(60, Byte), Integer))
         Me.btnSearch.FlatAppearance.BorderSize = 0
         Me.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnSearch.Font = New System.Drawing.Font("Helvetica", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnSearch.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnSearch.Location = New System.Drawing.Point(200, 171)
         Me.btnSearch.Name = "btnSearch"
         Me.btnSearch.Size = New System.Drawing.Size(199, 37)
@@ -333,7 +333,7 @@ Partial Class classRegistration
         'lvClass
         '
         Me.lvClass.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader6, Me.ColumnHeader8, Me.ColumnHeader9, Me.ColumnHeader5})
-        Me.lvClass.Font = New System.Drawing.Font("Helvetica", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lvClass.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lvClass.ForeColor = System.Drawing.Color.Black
         Me.lvClass.FullRowSelect = True
         Me.lvClass.GridLines = True
@@ -366,11 +366,11 @@ Partial Class classRegistration
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("HelveticaNeue-Light", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.WhiteSmoke
         Me.Label2.Location = New System.Drawing.Point(836, 51)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(94, 16)
+        Me.Label2.Size = New System.Drawing.Size(99, 16)
         Me.Label2.TabIndex = 57
         Me.Label2.Text = "Search Subject"
         '
@@ -379,11 +379,11 @@ Partial Class classRegistration
         Me.Label5.AccessibleDescription = ""
         Me.Label5.AutoSize = True
         Me.Label5.BackColor = System.Drawing.Color.Transparent
-        Me.Label5.Font = New System.Drawing.Font("Helvetica", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(161, Byte), Integer), CType(CType(58, Byte), Integer))
         Me.Label5.Location = New System.Drawing.Point(3, 6)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(160, 22)
+        Me.Label5.Size = New System.Drawing.Size(159, 22)
         Me.Label5.TabIndex = 58
         Me.Label5.Text = "Subjects Enrolled"
         '
@@ -392,13 +392,13 @@ Partial Class classRegistration
         Me.Label6.AccessibleDescription = ""
         Me.Label6.AutoSize = True
         Me.Label6.BackColor = System.Drawing.Color.Transparent
-        Me.Label6.Font = New System.Drawing.Font("Helvetica", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(161, Byte), Integer), CType(CType(58, Byte), Integer))
         Me.Label6.Location = New System.Drawing.Point(3, 6)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(143, 22)
+        Me.Label6.Size = New System.Drawing.Size(155, 22)
         Me.Label6.TabIndex = 59
-        Me.Label6.Text = "Class Schedule"
+        Me.Label6.Text = "Subjects Offered"
         '
         'Panel4
         '
@@ -421,11 +421,11 @@ Partial Class classRegistration
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("HelveticaNeue-Light", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.ForeColor = System.Drawing.Color.WhiteSmoke
         Me.Label7.Location = New System.Drawing.Point(836, 370)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(94, 16)
+        Me.Label7.Size = New System.Drawing.Size(99, 16)
         Me.Label7.TabIndex = 63
         Me.Label7.Text = "Search Subject"
         '
@@ -434,7 +434,7 @@ Partial Class classRegistration
         Me.btnRemove.BackColor = System.Drawing.Color.FromArgb(CType(CType(23, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(60, Byte), Integer))
         Me.btnRemove.FlatAppearance.BorderSize = 0
         Me.btnRemove.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnRemove.Font = New System.Drawing.Font("Helvetica", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnRemove.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnRemove.Location = New System.Drawing.Point(836, 269)
         Me.btnRemove.Name = "btnRemove"
         Me.btnRemove.Size = New System.Drawing.Size(199, 37)
@@ -447,7 +447,7 @@ Partial Class classRegistration
         Me.btnSubmit.BackColor = System.Drawing.Color.FromArgb(CType(CType(23, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(60, Byte), Integer))
         Me.btnSubmit.FlatAppearance.BorderSize = 0
         Me.btnSubmit.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnSubmit.Font = New System.Drawing.Font("Helvetica", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnSubmit.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnSubmit.Location = New System.Drawing.Point(836, 600)
         Me.btnSubmit.Name = "btnSubmit"
         Me.btnSubmit.Size = New System.Drawing.Size(199, 37)
@@ -467,20 +467,20 @@ Partial Class classRegistration
         'txtIDNumber2
         '
         Me.txtIDNumber2.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.txtIDNumber2.Font = New System.Drawing.Font("Helvetica", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtIDNumber2.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtIDNumber2.Location = New System.Drawing.Point(3, 7)
         Me.txtIDNumber2.Name = "txtIDNumber2"
-        Me.txtIDNumber2.Size = New System.Drawing.Size(54, 16)
+        Me.txtIDNumber2.Size = New System.Drawing.Size(54, 15)
         Me.txtIDNumber2.TabIndex = 1
         '
         'Label12
         '
         Me.Label12.AutoSize = True
-        Me.Label12.Font = New System.Drawing.Font("Roboto", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label12.ForeColor = System.Drawing.Color.White
         Me.Label12.Location = New System.Drawing.Point(320, 141)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(13, 15)
+        Me.Label12.Size = New System.Drawing.Size(12, 16)
         Me.Label12.TabIndex = 66
         Me.Label12.Text = "-"
         '
@@ -496,10 +496,10 @@ Partial Class classRegistration
         'txtEnrolledSubject
         '
         Me.txtEnrolledSubject.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.txtEnrolledSubject.Font = New System.Drawing.Font("Helvetica", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtEnrolledSubject.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtEnrolledSubject.Location = New System.Drawing.Point(3, 7)
         Me.txtEnrolledSubject.Name = "txtEnrolledSubject"
-        Me.txtEnrolledSubject.Size = New System.Drawing.Size(193, 16)
+        Me.txtEnrolledSubject.Size = New System.Drawing.Size(193, 15)
         Me.txtEnrolledSubject.TabIndex = 1
         '
         'Panel1
@@ -514,10 +514,10 @@ Partial Class classRegistration
         'txtSubject
         '
         Me.txtSubject.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.txtSubject.Font = New System.Drawing.Font("Helvetica", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtSubject.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtSubject.Location = New System.Drawing.Point(3, 7)
         Me.txtSubject.Name = "txtSubject"
-        Me.txtSubject.Size = New System.Drawing.Size(193, 16)
+        Me.txtSubject.Size = New System.Drawing.Size(193, 15)
         Me.txtSubject.TabIndex = 1
         '
         'classRegistration

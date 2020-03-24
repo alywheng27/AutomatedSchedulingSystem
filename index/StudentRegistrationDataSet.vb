@@ -1,4 +1,2 @@
-﻿
-
-Partial Public Class StudentRegistrationDataSet
+﻿Partial Class StudentRegistrationDataSet
 End Class

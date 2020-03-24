@@ -118,11 +118,11 @@ Partial Class btnUser
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Roboto", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.Snow
         Me.Label1.Location = New System.Drawing.Point(87, 12)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(122, 25)
+        Me.Label1.Size = New System.Drawing.Size(130, 25)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "TRAC - ASS"
         '
@@ -165,7 +165,7 @@ Partial Class btnUser
         Me.btnMasterList.FlatAppearance.BorderSize = 0
         Me.btnMasterList.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(39, Byte), Integer), CType(CType(56, Byte), Integer))
         Me.btnMasterList.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnMasterList.Font = New System.Drawing.Font("Helvetica", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnMasterList.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnMasterList.ForeColor = System.Drawing.Color.Gainsboro
         Me.btnMasterList.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnMasterList.Location = New System.Drawing.Point(0, 332)
@@ -212,7 +212,7 @@ Partial Class btnUser
         Me.btnRoom.FlatAppearance.BorderSize = 0
         Me.btnRoom.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(39, Byte), Integer), CType(CType(56, Byte), Integer))
         Me.btnRoom.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnRoom.Font = New System.Drawing.Font("Helvetica", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnRoom.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnRoom.ForeColor = System.Drawing.Color.Gainsboro
         Me.btnRoom.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnRoom.Location = New System.Drawing.Point(0, 237)
@@ -229,7 +229,7 @@ Partial Class btnUser
         Me.btnClassSchedule.FlatAppearance.BorderSize = 0
         Me.btnClassSchedule.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(39, Byte), Integer), CType(CType(56, Byte), Integer))
         Me.btnClassSchedule.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnClassSchedule.Font = New System.Drawing.Font("Helvetica", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnClassSchedule.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnClassSchedule.ForeColor = System.Drawing.Color.Gainsboro
         Me.btnClassSchedule.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnClassSchedule.Location = New System.Drawing.Point(0, 379)
@@ -246,7 +246,7 @@ Partial Class btnUser
         Me.btnInstructor.FlatAppearance.BorderSize = 0
         Me.btnInstructor.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(39, Byte), Integer), CType(CType(56, Byte), Integer))
         Me.btnInstructor.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnInstructor.Font = New System.Drawing.Font("Helvetica", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnInstructor.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnInstructor.ForeColor = System.Drawing.Color.Gainsboro
         Me.btnInstructor.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnInstructor.Location = New System.Drawing.Point(0, 283)
@@ -273,7 +273,7 @@ Partial Class btnUser
         Me.btnRegister.FlatAppearance.BorderSize = 0
         Me.btnRegister.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(39, Byte), Integer), CType(CType(56, Byte), Integer))
         Me.btnRegister.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnRegister.Font = New System.Drawing.Font("Helvetica", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnRegister.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnRegister.ForeColor = System.Drawing.Color.Gainsboro
         Me.btnRegister.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnRegister.Location = New System.Drawing.Point(0, 425)
@@ -300,7 +300,7 @@ Partial Class btnUser
         Me.btnSubject.FlatAppearance.BorderSize = 0
         Me.btnSubject.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(39, Byte), Integer), CType(CType(56, Byte), Integer))
         Me.btnSubject.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnSubject.Font = New System.Drawing.Font("Helvetica", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnSubject.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnSubject.ForeColor = System.Drawing.Color.Gainsboro
         Me.btnSubject.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnSubject.Location = New System.Drawing.Point(0, 191)
@@ -327,7 +327,7 @@ Partial Class btnUser
         Me.btnStudent.FlatAppearance.BorderSize = 0
         Me.btnStudent.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(39, Byte), Integer), CType(CType(56, Byte), Integer))
         Me.btnStudent.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnStudent.Font = New System.Drawing.Font("Helvetica", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnStudent.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnStudent.ForeColor = System.Drawing.Color.Gainsboro
         Me.btnStudent.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnStudent.Location = New System.Drawing.Point(0, 145)
@@ -341,11 +341,11 @@ Partial Class btnUser
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Haarlem Deco DEMO", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.Gainsboro
         Me.Label2.Location = New System.Drawing.Point(47, 40)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(139, 52)
+        Me.Label2.Size = New System.Drawing.Size(159, 66)
         Me.Label2.TabIndex = 0
         Me.Label2.Text = "Automated" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Scheduling"
         Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -366,7 +366,7 @@ Partial Class btnUser
         Me.MinimizeBox = False
         Me.Name = "btnUser"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "main"
+        Me.Text = "Main"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         Me.Panel2.ResumeLayout(False)

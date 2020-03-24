@@ -283,25 +283,9 @@ Partial Public Class masterListDataSet
     Partial Public Class ClassRegistrationViewDataTable
         Inherits Global.System.Data.TypedTableBase(Of ClassRegistrationViewRow)
         
-        Private columnSubject As Global.System.Data.DataColumn
-        
-        Private columnClassRegistrationID As Global.System.Data.DataColumn
-        
-        Private columnStudentID As Global.System.Data.DataColumn
-        
         Private columnClassScheduleID As Global.System.Data.DataColumn
         
         Private columnIsDeleted As Global.System.Data.DataColumn
-        
-        Private columnDeletedBy As Global.System.Data.DataColumn
-        
-        Private columnRoom As Global.System.Data.DataColumn
-        
-        Private columnSection As Global.System.Data.DataColumn
-        
-        Private columnTimeEndID As Global.System.Data.DataColumn
-        
-        Private columnTimeStartID As Global.System.Data.DataColumn
         
         Private columnFirstName As Global.System.Data.DataColumn
         
@@ -310,8 +294,6 @@ Partial Public Class masterListDataSet
         Private columnExtensionName As Global.System.Data.DataColumn
         
         Private columnSurname As Global.System.Data.DataColumn
-        
-        Private columnStudentIDNumber As Global.System.Data.DataColumn
         
         Private columnCourse As Global.System.Data.DataColumn
         
@@ -356,30 +338,6 @@ Partial Public Class masterListDataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public ReadOnly Property SubjectColumn() As Global.System.Data.DataColumn
-            Get
-                Return Me.columnSubject
-            End Get
-        End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public ReadOnly Property ClassRegistrationIDColumn() As Global.System.Data.DataColumn
-            Get
-                Return Me.columnClassRegistrationID
-            End Get
-        End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public ReadOnly Property StudentIDColumn() As Global.System.Data.DataColumn
-            Get
-                Return Me.columnStudentID
-            End Get
-        End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Public ReadOnly Property ClassScheduleIDColumn() As Global.System.Data.DataColumn
             Get
                 Return Me.columnClassScheduleID
@@ -391,46 +349,6 @@ Partial Public Class masterListDataSet
         Public ReadOnly Property IsDeletedColumn() As Global.System.Data.DataColumn
             Get
                 Return Me.columnIsDeleted
-            End Get
-        End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public ReadOnly Property DeletedByColumn() As Global.System.Data.DataColumn
-            Get
-                Return Me.columnDeletedBy
-            End Get
-        End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public ReadOnly Property RoomColumn() As Global.System.Data.DataColumn
-            Get
-                Return Me.columnRoom
-            End Get
-        End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public ReadOnly Property SectionColumn() As Global.System.Data.DataColumn
-            Get
-                Return Me.columnSection
-            End Get
-        End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public ReadOnly Property TimeEndIDColumn() As Global.System.Data.DataColumn
-            Get
-                Return Me.columnTimeEndID
-            End Get
-        End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public ReadOnly Property TimeStartIDColumn() As Global.System.Data.DataColumn
-            Get
-                Return Me.columnTimeStartID
             End Get
         End Property
         
@@ -463,14 +381,6 @@ Partial Public Class masterListDataSet
         Public ReadOnly Property SurnameColumn() As Global.System.Data.DataColumn
             Get
                 Return Me.columnSurname
-            End Get
-        End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public ReadOnly Property StudentIDNumberColumn() As Global.System.Data.DataColumn
-            Get
-                Return Me.columnStudentIDNumber
             End Get
         End Property
         
@@ -535,36 +445,12 @@ Partial Public Class masterListDataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Overloads Function AddClassRegistrationViewRow( _
-                    ByVal Subject As String,  _
-                    ByVal ClassRegistrationID As Long,  _
-                    ByVal StudentID As Long,  _
-                    ByVal ClassScheduleID As Long,  _
-                    ByVal IsDeleted As Boolean,  _
-                    ByVal DeletedBy As String,  _
-                    ByVal Room As String,  _
-                    ByVal Section As String,  _
-                    ByVal TimeEndID As Long,  _
-                    ByVal TimeStartID As Long,  _
-                    ByVal FirstName As String,  _
-                    ByVal MiddleInitial As String,  _
-                    ByVal ExtensionName As String,  _
-                    ByVal Surname As String,  _
-                    ByVal StudentIDNumber As String,  _
-                    ByVal Course As String,  _
-                    ByVal AcademicYear As String,  _
-                    ByVal Semester As String) As ClassRegistrationViewRow
+        Public Overloads Function AddClassRegistrationViewRow(ByVal ClassScheduleID As Long, ByVal IsDeleted As Boolean, ByVal FirstName As String, ByVal MiddleInitial As String, ByVal ExtensionName As String, ByVal Surname As String, ByVal Course As String, ByVal AcademicYear As String, ByVal Semester As String) As ClassRegistrationViewRow
             Dim rowClassRegistrationViewRow As ClassRegistrationViewRow = CType(Me.NewRow,ClassRegistrationViewRow)
-            Dim columnValuesArray() As Object = New Object() {Subject, ClassRegistrationID, StudentID, ClassScheduleID, IsDeleted, DeletedBy, Room, Section, TimeEndID, TimeStartID, FirstName, MiddleInitial, ExtensionName, Surname, StudentIDNumber, Course, AcademicYear, Semester}
+            Dim columnValuesArray() As Object = New Object() {ClassScheduleID, IsDeleted, FirstName, MiddleInitial, ExtensionName, Surname, Course, AcademicYear, Semester}
             rowClassRegistrationViewRow.ItemArray = columnValuesArray
             Me.Rows.Add(rowClassRegistrationViewRow)
             Return rowClassRegistrationViewRow
-        End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Function FindByClassRegistrationID(ByVal ClassRegistrationID As Long) As ClassRegistrationViewRow
-            Return CType(Me.Rows.Find(New Object() {ClassRegistrationID}),ClassRegistrationViewRow)
         End Function
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -584,21 +470,12 @@ Partial Public Class masterListDataSet
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Friend Sub InitVars()
-            Me.columnSubject = MyBase.Columns("Subject")
-            Me.columnClassRegistrationID = MyBase.Columns("ClassRegistrationID")
-            Me.columnStudentID = MyBase.Columns("StudentID")
             Me.columnClassScheduleID = MyBase.Columns("ClassScheduleID")
             Me.columnIsDeleted = MyBase.Columns("IsDeleted")
-            Me.columnDeletedBy = MyBase.Columns("DeletedBy")
-            Me.columnRoom = MyBase.Columns("Room")
-            Me.columnSection = MyBase.Columns("Section")
-            Me.columnTimeEndID = MyBase.Columns("TimeEndID")
-            Me.columnTimeStartID = MyBase.Columns("TimeStartID")
             Me.columnFirstName = MyBase.Columns("FirstName")
             Me.columnMiddleInitial = MyBase.Columns("MiddleInitial")
             Me.columnExtensionName = MyBase.Columns("ExtensionName")
             Me.columnSurname = MyBase.Columns("Surname")
-            Me.columnStudentIDNumber = MyBase.Columns("StudentIDNumber")
             Me.columnCourse = MyBase.Columns("Course")
             Me.columnAcademicYear = MyBase.Columns("AcademicYear")
             Me.columnSemester = MyBase.Columns("Semester")
@@ -607,26 +484,10 @@ Partial Public Class masterListDataSet
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Private Sub InitClass()
-            Me.columnSubject = New Global.System.Data.DataColumn("Subject", GetType(String), Nothing, Global.System.Data.MappingType.Element)
-            MyBase.Columns.Add(Me.columnSubject)
-            Me.columnClassRegistrationID = New Global.System.Data.DataColumn("ClassRegistrationID", GetType(Long), Nothing, Global.System.Data.MappingType.Element)
-            MyBase.Columns.Add(Me.columnClassRegistrationID)
-            Me.columnStudentID = New Global.System.Data.DataColumn("StudentID", GetType(Long), Nothing, Global.System.Data.MappingType.Element)
-            MyBase.Columns.Add(Me.columnStudentID)
             Me.columnClassScheduleID = New Global.System.Data.DataColumn("ClassScheduleID", GetType(Long), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columnClassScheduleID)
             Me.columnIsDeleted = New Global.System.Data.DataColumn("IsDeleted", GetType(Boolean), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columnIsDeleted)
-            Me.columnDeletedBy = New Global.System.Data.DataColumn("DeletedBy", GetType(String), Nothing, Global.System.Data.MappingType.Element)
-            MyBase.Columns.Add(Me.columnDeletedBy)
-            Me.columnRoom = New Global.System.Data.DataColumn("Room", GetType(String), Nothing, Global.System.Data.MappingType.Element)
-            MyBase.Columns.Add(Me.columnRoom)
-            Me.columnSection = New Global.System.Data.DataColumn("Section", GetType(String), Nothing, Global.System.Data.MappingType.Element)
-            MyBase.Columns.Add(Me.columnSection)
-            Me.columnTimeEndID = New Global.System.Data.DataColumn("TimeEndID", GetType(Long), Nothing, Global.System.Data.MappingType.Element)
-            MyBase.Columns.Add(Me.columnTimeEndID)
-            Me.columnTimeStartID = New Global.System.Data.DataColumn("TimeStartID", GetType(Long), Nothing, Global.System.Data.MappingType.Element)
-            MyBase.Columns.Add(Me.columnTimeStartID)
             Me.columnFirstName = New Global.System.Data.DataColumn("FirstName", GetType(String), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columnFirstName)
             Me.columnMiddleInitial = New Global.System.Data.DataColumn("MiddleInitial", GetType(String), Nothing, Global.System.Data.MappingType.Element)
@@ -635,26 +496,16 @@ Partial Public Class masterListDataSet
             MyBase.Columns.Add(Me.columnExtensionName)
             Me.columnSurname = New Global.System.Data.DataColumn("Surname", GetType(String), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columnSurname)
-            Me.columnStudentIDNumber = New Global.System.Data.DataColumn("StudentIDNumber", GetType(String), Nothing, Global.System.Data.MappingType.Element)
-            MyBase.Columns.Add(Me.columnStudentIDNumber)
             Me.columnCourse = New Global.System.Data.DataColumn("Course", GetType(String), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columnCourse)
             Me.columnAcademicYear = New Global.System.Data.DataColumn("AcademicYear", GetType(String), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columnAcademicYear)
             Me.columnSemester = New Global.System.Data.DataColumn("Semester", GetType(String), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columnSemester)
-            Me.Constraints.Add(New Global.System.Data.UniqueConstraint("Constraint1", New Global.System.Data.DataColumn() {Me.columnClassRegistrationID}, true))
-            Me.columnSubject.MaxLength = 20
-            Me.columnClassRegistrationID.AllowDBNull = false
-            Me.columnClassRegistrationID.Unique = true
-            Me.columnDeletedBy.MaxLength = 20
-            Me.columnRoom.MaxLength = 10
-            Me.columnSection.MaxLength = 5
             Me.columnFirstName.MaxLength = 50
             Me.columnMiddleInitial.MaxLength = 10
             Me.columnExtensionName.MaxLength = 20
             Me.columnSurname.MaxLength = 50
-            Me.columnStudentIDNumber.MaxLength = 20
             Me.columnCourse.MaxLength = 100
             Me.columnAcademicYear.MaxLength = 15
             Me.columnSemester.MaxLength = 20
@@ -804,47 +655,6 @@ Partial Public Class masterListDataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Property Subject() As String
-            Get
-                Try 
-                    Return CType(Me(Me.tableClassRegistrationView.SubjectColumn),String)
-                Catch e As Global.System.InvalidCastException
-                    Throw New Global.System.Data.StrongTypingException("The value for column 'Subject' in table 'ClassRegistrationView' is DBNull.", e)
-                End Try
-            End Get
-            Set
-                Me(Me.tableClassRegistrationView.SubjectColumn) = value
-            End Set
-        End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Property ClassRegistrationID() As Long
-            Get
-                Return CType(Me(Me.tableClassRegistrationView.ClassRegistrationIDColumn),Long)
-            End Get
-            Set
-                Me(Me.tableClassRegistrationView.ClassRegistrationIDColumn) = value
-            End Set
-        End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Property StudentID() As Long
-            Get
-                Try 
-                    Return CType(Me(Me.tableClassRegistrationView.StudentIDColumn),Long)
-                Catch e As Global.System.InvalidCastException
-                    Throw New Global.System.Data.StrongTypingException("The value for column 'StudentID' in table 'ClassRegistrationView' is DBNull.", e)
-                End Try
-            End Get
-            Set
-                Me(Me.tableClassRegistrationView.StudentIDColumn) = value
-            End Set
-        End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Public Property ClassScheduleID() As Long
             Get
                 Try 
@@ -871,81 +681,6 @@ Partial Public Class masterListDataSet
             End Get
             Set
                 Me(Me.tableClassRegistrationView.IsDeletedColumn) = value
-            End Set
-        End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Property DeletedBy() As String
-            Get
-                Try 
-                    Return CType(Me(Me.tableClassRegistrationView.DeletedByColumn),String)
-                Catch e As Global.System.InvalidCastException
-                    Throw New Global.System.Data.StrongTypingException("The value for column 'DeletedBy' in table 'ClassRegistrationView' is DBNull.", e)
-                End Try
-            End Get
-            Set
-                Me(Me.tableClassRegistrationView.DeletedByColumn) = value
-            End Set
-        End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Property Room() As String
-            Get
-                Try 
-                    Return CType(Me(Me.tableClassRegistrationView.RoomColumn),String)
-                Catch e As Global.System.InvalidCastException
-                    Throw New Global.System.Data.StrongTypingException("The value for column 'Room' in table 'ClassRegistrationView' is DBNull.", e)
-                End Try
-            End Get
-            Set
-                Me(Me.tableClassRegistrationView.RoomColumn) = value
-            End Set
-        End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Property Section() As String
-            Get
-                Try 
-                    Return CType(Me(Me.tableClassRegistrationView.SectionColumn),String)
-                Catch e As Global.System.InvalidCastException
-                    Throw New Global.System.Data.StrongTypingException("The value for column 'Section' in table 'ClassRegistrationView' is DBNull.", e)
-                End Try
-            End Get
-            Set
-                Me(Me.tableClassRegistrationView.SectionColumn) = value
-            End Set
-        End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Property TimeEndID() As Long
-            Get
-                Try 
-                    Return CType(Me(Me.tableClassRegistrationView.TimeEndIDColumn),Long)
-                Catch e As Global.System.InvalidCastException
-                    Throw New Global.System.Data.StrongTypingException("The value for column 'TimeEndID' in table 'ClassRegistrationView' is DBNull.", e)
-                End Try
-            End Get
-            Set
-                Me(Me.tableClassRegistrationView.TimeEndIDColumn) = value
-            End Set
-        End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Property TimeStartID() As Long
-            Get
-                Try 
-                    Return CType(Me(Me.tableClassRegistrationView.TimeStartIDColumn),Long)
-                Catch e As Global.System.InvalidCastException
-                    Throw New Global.System.Data.StrongTypingException("The value for column 'TimeStartID' in table 'ClassRegistrationView' is DBNull.", e)
-                End Try
-            End Get
-            Set
-                Me(Me.tableClassRegistrationView.TimeStartIDColumn) = value
             End Set
         End Property
         
@@ -1011,22 +746,6 @@ Partial Public Class masterListDataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Property StudentIDNumber() As String
-            Get
-                Try 
-                    Return CType(Me(Me.tableClassRegistrationView.StudentIDNumberColumn),String)
-                Catch e As Global.System.InvalidCastException
-                    Throw New Global.System.Data.StrongTypingException("The value for column 'StudentIDNumber' in table 'ClassRegistrationView' is DBNull"& _ 
-                            ".", e)
-                End Try
-            End Get
-            Set
-                Me(Me.tableClassRegistrationView.StudentIDNumberColumn) = value
-            End Set
-        End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Public Property Course() As String
             Get
                 Try 
@@ -1072,30 +791,6 @@ Partial Public Class masterListDataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Function IsSubjectNull() As Boolean
-            Return Me.IsNull(Me.tableClassRegistrationView.SubjectColumn)
-        End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Sub SetSubjectNull()
-            Me(Me.tableClassRegistrationView.SubjectColumn) = Global.System.Convert.DBNull
-        End Sub
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Function IsStudentIDNull() As Boolean
-            Return Me.IsNull(Me.tableClassRegistrationView.StudentIDColumn)
-        End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Sub SetStudentIDNull()
-            Me(Me.tableClassRegistrationView.StudentIDColumn) = Global.System.Convert.DBNull
-        End Sub
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Public Function IsClassScheduleIDNull() As Boolean
             Return Me.IsNull(Me.tableClassRegistrationView.ClassScheduleIDColumn)
         End Function
@@ -1116,66 +811,6 @@ Partial Public Class masterListDataSet
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Public Sub SetIsDeletedNull()
             Me(Me.tableClassRegistrationView.IsDeletedColumn) = Global.System.Convert.DBNull
-        End Sub
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Function IsDeletedByNull() As Boolean
-            Return Me.IsNull(Me.tableClassRegistrationView.DeletedByColumn)
-        End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Sub SetDeletedByNull()
-            Me(Me.tableClassRegistrationView.DeletedByColumn) = Global.System.Convert.DBNull
-        End Sub
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Function IsRoomNull() As Boolean
-            Return Me.IsNull(Me.tableClassRegistrationView.RoomColumn)
-        End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Sub SetRoomNull()
-            Me(Me.tableClassRegistrationView.RoomColumn) = Global.System.Convert.DBNull
-        End Sub
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Function IsSectionNull() As Boolean
-            Return Me.IsNull(Me.tableClassRegistrationView.SectionColumn)
-        End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Sub SetSectionNull()
-            Me(Me.tableClassRegistrationView.SectionColumn) = Global.System.Convert.DBNull
-        End Sub
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Function IsTimeEndIDNull() As Boolean
-            Return Me.IsNull(Me.tableClassRegistrationView.TimeEndIDColumn)
-        End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Sub SetTimeEndIDNull()
-            Me(Me.tableClassRegistrationView.TimeEndIDColumn) = Global.System.Convert.DBNull
-        End Sub
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Function IsTimeStartIDNull() As Boolean
-            Return Me.IsNull(Me.tableClassRegistrationView.TimeStartIDColumn)
-        End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Sub SetTimeStartIDNull()
-            Me(Me.tableClassRegistrationView.TimeStartIDColumn) = Global.System.Convert.DBNull
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -1224,18 +859,6 @@ Partial Public Class masterListDataSet
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Public Sub SetSurnameNull()
             Me(Me.tableClassRegistrationView.SurnameColumn) = Global.System.Convert.DBNull
-        End Sub
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Function IsStudentIDNumberNull() As Boolean
-            Return Me.IsNull(Me.tableClassRegistrationView.StudentIDNumberColumn)
-        End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Sub SetStudentIDNumberNull()
-            Me(Me.tableClassRegistrationView.StudentIDNumberColumn) = Global.System.Convert.DBNull
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -1441,21 +1064,12 @@ Namespace masterListDataSetTableAdapters
             Dim tableMapping As Global.System.Data.Common.DataTableMapping = New Global.System.Data.Common.DataTableMapping()
             tableMapping.SourceTable = "Table"
             tableMapping.DataSetTable = "ClassRegistrationView"
-            tableMapping.ColumnMappings.Add("Subject", "Subject")
-            tableMapping.ColumnMappings.Add("ClassRegistrationID", "ClassRegistrationID")
-            tableMapping.ColumnMappings.Add("StudentID", "StudentID")
             tableMapping.ColumnMappings.Add("ClassScheduleID", "ClassScheduleID")
             tableMapping.ColumnMappings.Add("IsDeleted", "IsDeleted")
-            tableMapping.ColumnMappings.Add("DeletedBy", "DeletedBy")
-            tableMapping.ColumnMappings.Add("Room", "Room")
-            tableMapping.ColumnMappings.Add("Section", "Section")
-            tableMapping.ColumnMappings.Add("TimeEndID", "TimeEndID")
-            tableMapping.ColumnMappings.Add("TimeStartID", "TimeStartID")
             tableMapping.ColumnMappings.Add("FirstName", "FirstName")
             tableMapping.ColumnMappings.Add("MiddleInitial", "MiddleInitial")
             tableMapping.ColumnMappings.Add("ExtensionName", "ExtensionName")
             tableMapping.ColumnMappings.Add("Surname", "Surname")
-            tableMapping.ColumnMappings.Add("StudentIDNumber", "StudentIDNumber")
             tableMapping.ColumnMappings.Add("Course", "Course")
             tableMapping.ColumnMappings.Add("AcademicYear", "AcademicYear")
             tableMapping.ColumnMappings.Add("Semester", "Semester")
@@ -1466,7 +1080,7 @@ Namespace masterListDataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Private Sub InitConnection()
             Me._connection = New Global.System.Data.SqlClient.SqlConnection()
-            Me._connection.ConnectionString = Global.AutomatedSS.My.MySettings.Default.trac_assConnectionString
+            Me._connection.ConnectionString = Global.AutomatedSS.My.MySettings.Default.trac_assConnectionString3
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -1475,12 +1089,11 @@ Namespace masterListDataSetTableAdapters
             Me._commandCollection = New Global.System.Data.SqlClient.SqlCommand(0) {}
             Me._commandCollection(0) = New Global.System.Data.SqlClient.SqlCommand()
             Me._commandCollection(0).Connection = Me.Connection
-            Me._commandCollection(0).CommandText = "SELECT        Subject, ClassRegistrationID, StudentID, ClassScheduleID, IsDeleted"& _ 
-                ", DeletedBy, Room, Section, TimeEndID, TimeStartID, FirstName, MiddleInitial, Ex"& _ 
-                "tensionName, Surname, StudentIDNumber, Course, AcademicYear, "&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"                 "& _ 
-                "        Semester"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"FROM            ClassRegistrationView"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"WHERE        (ClassSche"& _ 
-                "duleID = @ClassScheduleID) AND AcademicYear = @AcademicYear AND Semester = @Seme"& _ 
-                "ster AND IsDeleted = 'False'"
+            Me._commandCollection(0).CommandText = "SELECT [ClassScheduleID]"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"      ,[IsDeleted]"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"      ,[FirstName]"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"      ,[MiddleI"& _ 
+                "nitial]"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"      ,[ExtensionName]"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"      ,[Surname]"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"      ,[Course]"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"      ,[Acad"& _ 
+                "emicYear]"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"      ,[Semester]"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"  FROM [trac-ass].[dbo].[ClassRegistrationView]"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&" "& _ 
+                " WHERE ClassScheduleID = @ClassScheduleID AND AcademicYear = @AcademicYear AND S"& _ 
+                "emester = @Semester AND IsDeleted = 'False'"
             Me._commandCollection(0).CommandType = Global.System.Data.CommandType.Text
             Me._commandCollection(0).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@ClassScheduleID", Global.System.Data.SqlDbType.BigInt, 8, Global.System.Data.ParameterDirection.Input, 0, 0, "ClassScheduleID", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._commandCollection(0).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@AcademicYear", Global.System.Data.SqlDbType.NVarChar, 15, Global.System.Data.ParameterDirection.Input, 0, 0, "AcademicYear", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))

@@ -31,6 +31,7 @@
                 If dsUser.Tables("tblUser").Rows(0).Item("Password") = password.Text Then
                     objUser = New UserClass(dsUser.Tables("tblUser").Rows(0).Item("UserID"))
                     objUser.getUsername = dsUser.Tables("tblUser").Rows(0).Item("Username")
+                    objUser.getUserTypeID = dsUser.Tables("tblUser").Rows(0).Item("UserTypeID")
                     objUser.getUserType = dsUser.Tables("tblUser").Rows(0).Item("UserType")
 
                     sql = "SELECT * FROM CurrentYearSem "

@@ -1,4 +1,9 @@
-﻿Public Class subjectAU
+﻿Imports System.Data.OleDb
+Imports System.Data.SqlClient
+
+Public Class subjectAU
+
+    Public subjectID As String
 
     Private departmentID() As Integer
 
@@ -49,7 +54,7 @@
 
         txtDescripion.Text = StrConv(txtDescripion.Text, VbStrConv.ProperCase)
 
-        sql = "SELECT SubjectID FROM Subject WHERE Subject = '" & txtSubject.Text & "' AND IsDeleted = 'False' "
+        sql = "SELECT SubjectID FROM Subject WHERE Subject = '" & txtSubject.Text & "' AND SubjectDescription = '" & txtDescripion.Text & "' AND DepartmentID = '" & department & "' AND IsDeleted = 'False' "
 
         If fillData(sql, dsSubject, "tblSubject") = True Then
             If dsSubject.Tables("tblSubject").Rows.Count > 0 Then
@@ -59,25 +64,42 @@
             End If
         End If
 
-        sql = "SELECT SubjectID FROM Subject WHERE SubjectDescription = '" & txtDescripion.Text & "' AND IsDeleted = 'False' "
+        'sql = "SELECT SubjectID FROM Subject WHERE SubjectDescription = '" & txtDescripion.Text & "' AND IsDeleted = 'False' "
 
-        If fillData(sql, dsSubject, "tblSubject") = True Then
-            If dsSubject.Tables("tblSubject").Rows.Count > 0 Then
-                MsgBox("Description already exist.", vbInformation + vbOKOnly, systemName)
-                txtDescripion.Text = ""
-                Exit Sub
-            End If
-        End If
+        'If fillData(sql, dsSubject, "tblSubject") = True Then
+        '    If dsSubject.Tables("tblSubject").Rows.Count > 0 Then
+        '        MsgBox("Description already exist.", vbInformation + vbOKOnly, systemName)
+        '        txtDescripion.Text = ""
+        '        Exit Sub
+        '    End If
+        'End If
+
+        CN = New SqlConnection("Data Source=DESKTOP-C4499M6;Initial Catalog=trac-ass;User Id=cyberaly27;Password=teleport300L!;")
 
         sql = " 
-                INSERT INTO Subject (Subject, SubjectDescription, LectureUnit, LabUnit, DepartmentID) VALUES ('" & txtSubject.Text & "', '" & txtDescripion.Text & "', '" & txtLecUnit.Text & "', '" & txtLabUnit.Text & "', " & department & ");
+                INSERT INTO Subject (Subject, SubjectDescription, Unit, LectureUnit, LabUnit, DepartmentID) VALUES (@subject, @description, @unit, @lecUnit, @labUnit, @department);
               "
+        Try
+            CN.Open()
+            Dim cmd As SqlCommand
+            cmd = New SqlCommand(sql, CN)
+            cmd.Parameters.AddWithValue("@subject", txtSubject.Text)
+            cmd.Parameters.AddWithValue("@description", txtDescripion.Text)
+            cmd.Parameters.AddWithValue("@unit", txtUnit.Text)
+            cmd.Parameters.AddWithValue("@lecUnit", txtLecUnit.Text)
+            cmd.Parameters.AddWithValue("@labUnit", txtLabUnit.Text)
+            cmd.Parameters.AddWithValue("@department", department)
+            cmd.ExecuteNonQuery()
+            cmd.Dispose()
+            CN.Close()
 
-        If updateData(sql) = True Then
             MsgBox("New Subject added.", vbInformation + vbOKOnly, systemName)
             clear()
             subject.listSubject(Nothing)
-        End If
+
+        Catch ex As Exception
+            MsgBox(ex.Message & vbNewLine & ex.ToString, vbExclamation + vbOKOnly, systemName)
+        End Try
     End Sub
 
     Private Sub btnUpdate_Click(sender As Object, e As EventArgs) Handles btnUpdate.Click
@@ -87,16 +109,34 @@
 
         Dim sql As String
 
+        CN = New SqlConnection("Data Source=DESKTOP-C4499M6;Initial Catalog=trac-ass;User Id=cyberaly27;Password=teleport300L!;")
+
         sql = " 
-                UPDATE Subject SET Subject = '" & txtSubject.Text & "', SubjectDescription = '" & txtDescripion.Text & "', LectureUnit = '" & txtLecUnit.Text & "', LabUnit = '" & txtLabUnit.Text & "', DepartmentID = '" & department & "' WHERE SubjectID = " & objSubject.getSubjectID.ToString & " ;
+                UPDATE Subject SET Subject = @subject, SubjectDescription = @description, Unit = @unit, LectureUnit = @lecUnit, LabUnit = @labUnit, DepartmentID = @department WHERE SubjectID = " & subjectID & " ;
               "
 
-        If updateData(sql) = True Then
+        Try
+            CN.Open()
+            Dim cmd As SqlCommand
+            cmd = New SqlCommand(sql, CN)
+            cmd.Parameters.AddWithValue("@subject", txtSubject.Text)
+            cmd.Parameters.AddWithValue("@description", txtDescripion.Text)
+            cmd.Parameters.AddWithValue("@unit", txtUnit.Text)
+            cmd.Parameters.AddWithValue("@lecUnit", txtLecUnit.Text)
+            cmd.Parameters.AddWithValue("@labUnit", txtLabUnit.Text)
+            cmd.Parameters.AddWithValue("@department", department)
+            cmd.ExecuteNonQuery()
+            cmd.Dispose()
+            CN.Close()
+
             MsgBox("Subject Updated.", vbInformation + vbOKOnly, systemName)
             clear()
             subject.listSubject(Nothing)
             Me.Dispose()
-        End If
+
+        Catch ex As Exception
+            MsgBox(ex.Message & vbNewLine & ex.ToString, vbExclamation + vbOKOnly, systemName)
+        End Try
     End Sub
 
     Private Function checkFields()
@@ -109,6 +149,12 @@
         If txtDescripion.Text = "" Then
             MsgBox("Please enter a Description.", vbInformation + vbOKOnly, systemName)
             txtDescripion.Focus()
+            Return False
+        End If
+
+        If txtUnit.Text = "" Then
+            MsgBox("Please enter a Unit.", vbInformation + vbOKOnly, systemName)
+            txtUnit.Focus()
             Return False
         End If
 
@@ -136,6 +182,7 @@
     Private Sub clear()
         txtSubject.Text = ""
         txtDescripion.Text = ""
+        txtUnit.Text = ""
         txtLecUnit.Text = ""
         txtLabUnit.Text = ""
 
@@ -146,14 +193,15 @@
     Public Sub loadUpdateList()
         txtSubject.Text = objSubject.getSubject
         txtDescripion.Text = objSubject.getDescription
+        txtUnit.Text = objSubject.getUnit
         txtLecUnit.Text = objSubject.getLecUnit
         txtLabUnit.Text = objSubject.getLabUnit
         cbDepartment.Text = objSubject.getDepartment
-
     End Sub
 
     Private Sub cbDepartment_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbDepartment.SelectedIndexChanged
         objSubject = New SubjectClass(departmentID(cbDepartment.SelectedIndex))
         department = objSubject.getDepartmentID
     End Sub
+
 End Class

@@ -4,6 +4,7 @@
 
     Private subject As String
     Private description As String
+    Private unit As String
     Private lecUnit As String
     Private labUnit As String
     Private department As String
@@ -37,6 +38,15 @@
         End Get
         Set(value As String)
             description = value
+        End Set
+    End Property
+
+    Public Property getUnit As String
+        Get
+            Return unit
+        End Get
+        Set(value As String)
+            unit = value
         End Set
     End Property
 

@@ -27,6 +27,7 @@
                 For i = 0 To dsSubject.Tables("tblSubject").Rows.Count - 1
                     xItem = lvSubject.Items.Add(dsSubject.Tables("tblSubject").Rows(i).Item("Subject"))
                     xItem.SubItems.Add(dsSubject.Tables("tblSubject").Rows(i).Item("SubjectDescription"))
+                    xItem.SubItems.Add(dsSubject.Tables("tblSubject").Rows(i).Item("Unit"))
                     xItem.SubItems.Add(dsSubject.Tables("tblSubject").Rows(i).Item("LectureUnit"))
                     xItem.SubItems.Add(dsSubject.Tables("tblSubject").Rows(i).Item("LabUnit"))
 
@@ -42,7 +43,7 @@
     End Sub
 
     Private Sub btnAddSubject_Click(sender As Object, e As EventArgs) Handles btnAddSubject.Click
-        subjectAU.studentAction.Text = "Instructor Information / Add"
+        subjectAU.studentAction.Text = "Subject Information / Add"
         subjectAU.btnUpdate.Enabled = False
         subjectAU.btnUpdate.Hide()
         subjectAU.btnSubmit.Enabled = True
@@ -64,6 +65,7 @@
             objSubject.getSubjectID = dsSubject.Tables("tblSubject").Rows(0).Item("SubjectID")
             objSubject.getSubject = dsSubject.Tables("tblSubject").Rows(0).Item("Subject")
             objSubject.getDescription = dsSubject.Tables("tblSubject").Rows(0).Item("SubjectDescription")
+            objSubject.getUnit = dsSubject.Tables("tblSubject").Rows(0).Item("Unit")
             objSubject.getLecUnit = dsSubject.Tables("tblSubject").Rows(0).Item("LectureUnit")
             objSubject.getLabUnit = dsSubject.Tables("tblSubject").Rows(0).Item("LabUnit")
             objSubject.getDepartment = dsSubject.Tables("tblSubject").Rows(0).Item("Department")
@@ -73,6 +75,8 @@
             subjectAU.btnSubmit.Hide()
             subjectAU.btnUpdate.Enabled = True
             subjectAU.btnUpdate.Show()
+
+            subjectAU.subjectID = objSubject.getSubjectID
 
             subjectAU.ShowDialog()
         End If

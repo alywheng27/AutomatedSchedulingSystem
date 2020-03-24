@@ -69,6 +69,8 @@ Partial Class classScheduleAU
         Me.Panel6 = New System.Windows.Forms.Panel()
         Me.cbAcademicYear = New System.Windows.Forms.ComboBox()
         Me.Label5 = New System.Windows.Forms.Label()
+        Me.Panel11 = New System.Windows.Forms.Panel()
+        Me.txtSearch = New System.Windows.Forms.TextBox()
         Me.Panel1.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
         Me.Panel2.SuspendLayout()
@@ -83,13 +85,14 @@ Partial Class classScheduleAU
         Me.GroupBox4.SuspendLayout()
         Me.Panel8.SuspendLayout()
         Me.Panel6.SuspendLayout()
+        Me.Panel11.SuspendLayout()
         Me.SuspendLayout()
         '
         'btnCancel
         '
         Me.btnCancel.BackColor = System.Drawing.Color.Gray
         Me.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnCancel.Font = New System.Drawing.Font("Helvetica", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnCancel.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnCancel.ForeColor = System.Drawing.Color.White
         Me.btnCancel.Location = New System.Drawing.Point(581, 592)
         Me.btnCancel.Name = "btnCancel"
@@ -123,20 +126,21 @@ Partial Class classScheduleAU
         'studentAction
         '
         Me.studentAction.AutoSize = True
-        Me.studentAction.Font = New System.Drawing.Font("Helvetica", 12.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.studentAction.Font = New System.Drawing.Font("Arial", 12.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.studentAction.ForeColor = System.Drawing.Color.WhiteSmoke
         Me.studentAction.Location = New System.Drawing.Point(15, 15)
         Me.studentAction.Name = "studentAction"
-        Me.studentAction.Size = New System.Drawing.Size(187, 20)
+        Me.studentAction.Size = New System.Drawing.Size(179, 19)
         Me.studentAction.TabIndex = 0
         Me.studentAction.Text = "Class Information / Add"
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.Panel11)
         Me.GroupBox1.Controls.Add(Me.lvSubject)
         Me.GroupBox1.Controls.Add(Me.Panel2)
         Me.GroupBox1.Controls.Add(Me.Label2)
-        Me.GroupBox1.Font = New System.Drawing.Font("Roboto", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox1.ForeColor = System.Drawing.Color.White
         Me.GroupBox1.Location = New System.Drawing.Point(12, 79)
         Me.GroupBox1.Name = "GroupBox1"
@@ -148,7 +152,7 @@ Partial Class classScheduleAU
         'lvSubject
         '
         Me.lvSubject.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader1, Me.ColumnHeader2})
-        Me.lvSubject.Font = New System.Drawing.Font("Helvetica", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lvSubject.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lvSubject.ForeColor = System.Drawing.Color.Black
         Me.lvSubject.FullRowSelect = True
         Me.lvSubject.GridLines = True
@@ -182,21 +186,21 @@ Partial Class classScheduleAU
         '
         Me.txtSubject.BackColor = System.Drawing.Color.White
         Me.txtSubject.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.txtSubject.Font = New System.Drawing.Font("Helvetica", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtSubject.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtSubject.Location = New System.Drawing.Point(3, 7)
         Me.txtSubject.Name = "txtSubject"
         Me.txtSubject.ReadOnly = True
-        Me.txtSubject.Size = New System.Drawing.Size(426, 16)
+        Me.txtSubject.Size = New System.Drawing.Size(426, 15)
         Me.txtSubject.TabIndex = 1
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Roboto", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.White
         Me.Label2.Location = New System.Drawing.Point(6, 31)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(50, 15)
+        Me.Label2.Size = New System.Drawing.Size(53, 16)
         Me.Label2.TabIndex = 3
         Me.Label2.Text = "Subject"
         '
@@ -204,7 +208,7 @@ Partial Class classScheduleAU
         '
         Me.btnUpdate.BackColor = System.Drawing.Color.MediumSeaGreen
         Me.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnUpdate.Font = New System.Drawing.Font("Helvetica", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnUpdate.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnUpdate.ForeColor = System.Drawing.Color.White
         Me.btnUpdate.Location = New System.Drawing.Point(752, 592)
         Me.btnUpdate.Name = "btnUpdate"
@@ -217,7 +221,7 @@ Partial Class classScheduleAU
         '
         Me.btnSubmit.BackColor = System.Drawing.Color.MediumSeaGreen
         Me.btnSubmit.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnSubmit.Font = New System.Drawing.Font("Helvetica", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnSubmit.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnSubmit.ForeColor = System.Drawing.Color.White
         Me.btnSubmit.Location = New System.Drawing.Point(752, 592)
         Me.btnSubmit.Name = "btnSubmit"
@@ -234,7 +238,7 @@ Partial Class classScheduleAU
         Me.GroupBox2.Controls.Add(Me.Label4)
         Me.GroupBox2.Controls.Add(Me.Label3)
         Me.GroupBox2.Controls.Add(Me.Panel4)
-        Me.GroupBox2.Font = New System.Drawing.Font("Roboto", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox2.ForeColor = System.Drawing.Color.White
         Me.GroupBox2.Location = New System.Drawing.Point(12, 460)
         Me.GroupBox2.Name = "GroupBox2"
@@ -256,21 +260,21 @@ Partial Class classScheduleAU
         '
         Me.cbTimeEnd.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cbTimeEnd.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.cbTimeEnd.Font = New System.Drawing.Font("Helvetica", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cbTimeEnd.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cbTimeEnd.FormattingEnabled = True
         Me.cbTimeEnd.Location = New System.Drawing.Point(3, 4)
         Me.cbTimeEnd.Name = "cbTimeEnd"
-        Me.cbTimeEnd.Size = New System.Drawing.Size(193, 23)
+        Me.cbTimeEnd.Size = New System.Drawing.Size(193, 24)
         Me.cbTimeEnd.TabIndex = 17
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Roboto", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.White
         Me.Label1.Location = New System.Drawing.Point(239, 102)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(60, 15)
+        Me.Label1.Size = New System.Drawing.Size(66, 16)
         Me.Label1.TabIndex = 60
         Me.Label1.Text = "Time End"
         '
@@ -287,32 +291,32 @@ Partial Class classScheduleAU
         '
         Me.cbTimeStart.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cbTimeStart.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.cbTimeStart.Font = New System.Drawing.Font("Helvetica", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cbTimeStart.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cbTimeStart.FormattingEnabled = True
         Me.cbTimeStart.Location = New System.Drawing.Point(3, 4)
         Me.cbTimeStart.Name = "cbTimeStart"
-        Me.cbTimeStart.Size = New System.Drawing.Size(193, 23)
+        Me.cbTimeStart.Size = New System.Drawing.Size(193, 24)
         Me.cbTimeStart.TabIndex = 16
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Roboto", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.White
         Me.Label4.Location = New System.Drawing.Point(6, 102)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(67, 15)
+        Me.Label4.Size = New System.Drawing.Size(69, 16)
         Me.Label4.TabIndex = 58
         Me.Label4.Text = "Time Start"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Roboto", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.White
         Me.Label3.Location = New System.Drawing.Point(6, 31)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(30, 15)
+        Me.Label3.Size = New System.Drawing.Size(33, 16)
         Me.Label3.TabIndex = 3
         Me.Label3.Text = "Day"
         '
@@ -338,7 +342,7 @@ Partial Class classScheduleAU
         Me.chbSun.ForeColor = System.Drawing.Color.Black
         Me.chbSun.Location = New System.Drawing.Point(353, 6)
         Me.chbSun.Name = "chbSun"
-        Me.chbSun.Size = New System.Drawing.Size(48, 19)
+        Me.chbSun.Size = New System.Drawing.Size(50, 20)
         Me.chbSun.TabIndex = 67
         Me.chbSun.Text = "Sun"
         Me.chbSun.UseVisualStyleBackColor = False
@@ -350,7 +354,7 @@ Partial Class classScheduleAU
         Me.chbMon.ForeColor = System.Drawing.Color.Black
         Me.chbMon.Location = New System.Drawing.Point(33, 6)
         Me.chbMon.Name = "chbMon"
-        Me.chbMon.Size = New System.Drawing.Size(51, 19)
+        Me.chbMon.Size = New System.Drawing.Size(53, 20)
         Me.chbMon.TabIndex = 61
         Me.chbMon.Text = "Mon"
         Me.chbMon.UseVisualStyleBackColor = False
@@ -362,7 +366,7 @@ Partial Class classScheduleAU
         Me.chbSat.ForeColor = System.Drawing.Color.Black
         Me.chbSat.Location = New System.Drawing.Point(302, 6)
         Me.chbSat.Name = "chbSat"
-        Me.chbSat.Size = New System.Drawing.Size(45, 19)
+        Me.chbSat.Size = New System.Drawing.Size(47, 20)
         Me.chbSat.TabIndex = 63
         Me.chbSat.Text = "Sat"
         Me.chbSat.UseVisualStyleBackColor = False
@@ -374,7 +378,7 @@ Partial Class classScheduleAU
         Me.chbFri.ForeColor = System.Drawing.Color.Black
         Me.chbFri.Location = New System.Drawing.Point(255, 6)
         Me.chbFri.Name = "chbFri"
-        Me.chbFri.Size = New System.Drawing.Size(41, 19)
+        Me.chbFri.Size = New System.Drawing.Size(42, 20)
         Me.chbFri.TabIndex = 65
         Me.chbFri.Text = "Fri"
         Me.chbFri.UseVisualStyleBackColor = False
@@ -386,7 +390,7 @@ Partial Class classScheduleAU
         Me.chbThu.ForeColor = System.Drawing.Color.Black
         Me.chbThu.Location = New System.Drawing.Point(201, 6)
         Me.chbThu.Name = "chbThu"
-        Me.chbThu.Size = New System.Drawing.Size(48, 19)
+        Me.chbThu.Size = New System.Drawing.Size(50, 20)
         Me.chbThu.TabIndex = 66
         Me.chbThu.Text = "Thu"
         Me.chbThu.UseVisualStyleBackColor = False
@@ -398,7 +402,7 @@ Partial Class classScheduleAU
         Me.chbTue.ForeColor = System.Drawing.Color.Black
         Me.chbTue.Location = New System.Drawing.Point(90, 6)
         Me.chbTue.Name = "chbTue"
-        Me.chbTue.Size = New System.Drawing.Size(48, 19)
+        Me.chbTue.Size = New System.Drawing.Size(51, 20)
         Me.chbTue.TabIndex = 62
         Me.chbTue.Text = "Tue"
         Me.chbTue.UseVisualStyleBackColor = False
@@ -410,7 +414,7 @@ Partial Class classScheduleAU
         Me.chbWed.ForeColor = System.Drawing.Color.Black
         Me.chbWed.Location = New System.Drawing.Point(144, 6)
         Me.chbWed.Name = "chbWed"
-        Me.chbWed.Size = New System.Drawing.Size(51, 19)
+        Me.chbWed.Size = New System.Drawing.Size(56, 20)
         Me.chbWed.TabIndex = 64
         Me.chbWed.Text = "Wed"
         Me.chbWed.UseVisualStyleBackColor = False
@@ -423,7 +427,7 @@ Partial Class classScheduleAU
         Me.GroupBox3.Controls.Add(Me.Label6)
         Me.GroupBox3.Controls.Add(Me.Panel9)
         Me.GroupBox3.Controls.Add(Me.Label8)
-        Me.GroupBox3.Font = New System.Drawing.Font("Roboto", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox3.ForeColor = System.Drawing.Color.White
         Me.GroupBox3.Location = New System.Drawing.Point(465, 79)
         Me.GroupBox3.Name = "GroupBox3"
@@ -445,21 +449,21 @@ Partial Class classScheduleAU
         '
         Me.cbInstructor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cbInstructor.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.cbInstructor.Font = New System.Drawing.Font("Helvetica", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cbInstructor.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cbInstructor.FormattingEnabled = True
         Me.cbInstructor.Location = New System.Drawing.Point(0, 4)
         Me.cbInstructor.Name = "cbInstructor"
-        Me.cbInstructor.Size = New System.Drawing.Size(432, 23)
+        Me.cbInstructor.Size = New System.Drawing.Size(432, 24)
         Me.cbInstructor.TabIndex = 15
         '
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Font = New System.Drawing.Font("Roboto", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label9.ForeColor = System.Drawing.Color.White
         Me.Label9.Location = New System.Drawing.Point(6, 173)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(64, 15)
+        Me.Label9.Size = New System.Drawing.Size(61, 16)
         Me.Label9.TabIndex = 19
         Me.Label9.Text = "Instructor"
         '
@@ -476,21 +480,21 @@ Partial Class classScheduleAU
         '
         Me.cbSection.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cbSection.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.cbSection.Font = New System.Drawing.Font("Helvetica", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cbSection.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cbSection.FormattingEnabled = True
         Me.cbSection.Location = New System.Drawing.Point(0, 4)
         Me.cbSection.Name = "cbSection"
-        Me.cbSection.Size = New System.Drawing.Size(432, 23)
+        Me.cbSection.Size = New System.Drawing.Size(432, 24)
         Me.cbSection.TabIndex = 15
         '
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Roboto", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.ForeColor = System.Drawing.Color.White
         Me.Label6.Location = New System.Drawing.Point(6, 100)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(50, 15)
+        Me.Label6.Size = New System.Drawing.Size(53, 16)
         Me.Label6.TabIndex = 17
         Me.Label6.Text = "Section"
         '
@@ -507,21 +511,21 @@ Partial Class classScheduleAU
         '
         Me.cbRoom.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cbRoom.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.cbRoom.Font = New System.Drawing.Font("Helvetica", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cbRoom.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cbRoom.FormattingEnabled = True
         Me.cbRoom.Location = New System.Drawing.Point(0, 4)
         Me.cbRoom.Name = "cbRoom"
-        Me.cbRoom.Size = New System.Drawing.Size(432, 23)
+        Me.cbRoom.Size = New System.Drawing.Size(432, 24)
         Me.cbRoom.TabIndex = 15
         '
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Font = New System.Drawing.Font("Roboto", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.ForeColor = System.Drawing.Color.White
         Me.Label8.Location = New System.Drawing.Point(6, 31)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(40, 15)
+        Me.Label8.Size = New System.Drawing.Size(45, 16)
         Me.Label8.TabIndex = 3
         Me.Label8.Text = "Room"
         '
@@ -531,7 +535,7 @@ Partial Class classScheduleAU
         Me.GroupBox4.Controls.Add(Me.Label7)
         Me.GroupBox4.Controls.Add(Me.Panel6)
         Me.GroupBox4.Controls.Add(Me.Label5)
-        Me.GroupBox4.Font = New System.Drawing.Font("Roboto", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox4.ForeColor = System.Drawing.Color.White
         Me.GroupBox4.Location = New System.Drawing.Point(465, 333)
         Me.GroupBox4.Name = "GroupBox4"
@@ -553,21 +557,21 @@ Partial Class classScheduleAU
         '
         Me.cbSemester.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cbSemester.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.cbSemester.Font = New System.Drawing.Font("Helvetica", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cbSemester.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cbSemester.FormattingEnabled = True
         Me.cbSemester.Location = New System.Drawing.Point(0, 4)
         Me.cbSemester.Name = "cbSemester"
-        Me.cbSemester.Size = New System.Drawing.Size(432, 23)
+        Me.cbSemester.Size = New System.Drawing.Size(432, 24)
         Me.cbSemester.TabIndex = 15
         '
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Roboto", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.ForeColor = System.Drawing.Color.White
         Me.Label7.Location = New System.Drawing.Point(6, 103)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(56, 15)
+        Me.Label7.Size = New System.Drawing.Size(59, 16)
         Me.Label7.TabIndex = 17
         Me.Label7.Text = "Semeter"
         '
@@ -584,23 +588,42 @@ Partial Class classScheduleAU
         '
         Me.cbAcademicYear.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cbAcademicYear.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.cbAcademicYear.Font = New System.Drawing.Font("Helvetica", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cbAcademicYear.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cbAcademicYear.FormattingEnabled = True
         Me.cbAcademicYear.Location = New System.Drawing.Point(0, 4)
         Me.cbAcademicYear.Name = "cbAcademicYear"
-        Me.cbAcademicYear.Size = New System.Drawing.Size(432, 23)
+        Me.cbAcademicYear.Size = New System.Drawing.Size(432, 24)
         Me.cbAcademicYear.TabIndex = 15
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Roboto", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.Color.White
         Me.Label5.Location = New System.Drawing.Point(6, 31)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(94, 15)
+        Me.Label5.Size = New System.Drawing.Size(101, 16)
         Me.Label5.TabIndex = 3
         Me.Label5.Text = "Academic Year"
+        '
+        'Panel11
+        '
+        Me.Panel11.BackColor = System.Drawing.Color.White
+        Me.Panel11.Controls.Add(Me.txtSearch)
+        Me.Panel11.Location = New System.Drawing.Point(6, 335)
+        Me.Panel11.Name = "Panel11"
+        Me.Panel11.Size = New System.Drawing.Size(432, 31)
+        Me.Panel11.TabIndex = 3
+        '
+        'txtSearch
+        '
+        Me.txtSearch.BackColor = System.Drawing.Color.White
+        Me.txtSearch.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txtSearch.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtSearch.Location = New System.Drawing.Point(3, 7)
+        Me.txtSearch.Name = "txtSearch"
+        Me.txtSearch.Size = New System.Drawing.Size(426, 15)
+        Me.txtSearch.TabIndex = 1
         '
         'classScheduleAU
         '
@@ -614,8 +637,8 @@ Partial Class classScheduleAU
         Me.Controls.Add(Me.btnCancel)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.GroupBox1)
-        Me.Controls.Add(Me.btnUpdate)
         Me.Controls.Add(Me.btnSubmit)
+        Me.Controls.Add(Me.btnUpdate)
         Me.ForeColor = System.Drawing.Color.White
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "classScheduleAU"
@@ -641,6 +664,8 @@ Partial Class classScheduleAU
         Me.GroupBox4.PerformLayout()
         Me.Panel8.ResumeLayout(False)
         Me.Panel6.ResumeLayout(False)
+        Me.Panel11.ResumeLayout(False)
+        Me.Panel11.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -691,4 +716,6 @@ Partial Class classScheduleAU
     Friend WithEvents Panel10 As Panel
     Friend WithEvents Label9 As Label
     Friend WithEvents cbSection As ComboBox
+    Friend WithEvents Panel11 As Panel
+    Friend WithEvents txtSearch As TextBox
 End Class

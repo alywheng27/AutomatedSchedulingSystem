@@ -64,6 +64,36 @@ Namespace My
                 Return CType(Me("trac_assConnectionString"),String)
             End Get
         End Property
+        
+        <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-9GRS7GK;Initial Catalog=trac-ass;Integrated Security=True")>  _
+        Public ReadOnly Property trac_assConnectionString1() As String
+            Get
+                Return CType(Me("trac_assConnectionString1"),String)
+            End Get
+        End Property
+        
+        <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-55SKDN9;Initial Catalog=trac-ass;Integrated Security=True")>  _
+        Public ReadOnly Property trac_assConnectionString2() As String
+            Get
+                Return CType(Me("trac_assConnectionString2"),String)
+            End Get
+        End Property
+        
+        <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-C4499M6;Initial Catalog=trac-ass;Integrated Security=True")>  _
+        Public ReadOnly Property trac_assConnectionString3() As String
+            Get
+                Return CType(Me("trac_assConnectionString3"),String)
+            End Get
+        End Property
     End Class
 End Namespace
 

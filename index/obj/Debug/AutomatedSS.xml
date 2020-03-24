@@ -76,22 +76,22 @@ Used to sort self-referenced table's rows
 Represents a strongly typed in-memory cache of data.
 </summary>
 </member>
-<member name="T:AutomatedSS.StudentRegistrationDataSet.ClassScheduleViewDataTable">
+<member name="T:AutomatedSS.StudentRegistrationDataSet.CORDataTable">
 <summary>
 Represents the strongly named DataTable class.
 </summary>
 </member>
-<member name="T:AutomatedSS.StudentRegistrationDataSet.ClassScheduleViewRow">
+<member name="T:AutomatedSS.StudentRegistrationDataSet.CORRow">
 <summary>
 Represents strongly named DataRow class.
 </summary>
 </member>
-<member name="T:AutomatedSS.StudentRegistrationDataSet.ClassScheduleViewRowChangeEvent">
+<member name="T:AutomatedSS.StudentRegistrationDataSet.CORRowChangeEvent">
 <summary>
 Row event argument class
 </summary>
 </member>
-<member name="T:AutomatedSS.StudentRegistrationDataSetTableAdapters.ClassScheduleViewTableAdapter">
+<member name="T:AutomatedSS.StudentRegistrationDataSetTableAdapters.CORTableAdapter">
 <summary>
 Represents the connection and commands used to retrieve and save data.
 </summary>

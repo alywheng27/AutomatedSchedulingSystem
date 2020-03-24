@@ -542,7 +542,7 @@
         <Top>3.19618cm</Top>
         <Left>1.21166cm</Left>
         <Height>1.16416cm</Height>
-        <Width>14.64704cm</Width>
+        <Width>14.64705cm</Width>
         <ZIndex>2</ZIndex>
         <Style>
           <Border>
@@ -714,7 +714,7 @@
         <DataProvider>System.Data.DataSet</DataProvider>
         <ConnectString>/* Local Connection */</ConnectString>
       </ConnectionProperties>
-      <rd:DataSourceID>aa7be01c-c3bd-47c8-b4bb-dcb46dde84d7</rd:DataSourceID>
+      <rd:DataSourceID>98446bfb-7be0-4aff-a95b-a6cc1437016a</rd:DataSourceID>
     </DataSource>
   </DataSources>
   <DataSets>
@@ -724,18 +724,6 @@
         <CommandText>/* Local Query */</CommandText>
       </Query>
       <Fields>
-        <Field Name="ClassScheduleID">
-          <DataField>ClassScheduleID</DataField>
-          <rd:TypeName>System.Int64</rd:TypeName>
-        </Field>
-        <Field Name="TimeStartID">
-          <DataField>TimeStartID</DataField>
-          <rd:TypeName>System.Int64</rd:TypeName>
-        </Field>
-        <Field Name="TimeEndID">
-          <DataField>TimeEndID</DataField>
-          <rd:TypeName>System.Int64</rd:TypeName>
-        </Field>
         <Field Name="AcademicYear">
           <DataField>AcademicYear</DataField>
           <rd:TypeName>System.String</rd:TypeName>
@@ -744,68 +732,16 @@
           <DataField>IsDeleted</DataField>
           <rd:TypeName>System.Boolean</rd:TypeName>
         </Field>
-        <Field Name="DeletedBy">
-          <DataField>DeletedBy</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
         <Field Name="Subject">
           <DataField>Subject</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="SubjectDescription">
-          <DataField>SubjectDescription</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="Room">
           <DataField>Room</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="FirstName">
-          <DataField>FirstName</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="Surname">
-          <DataField>Surname</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="ExtensionName">
-          <DataField>ExtensionName</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
         <Field Name="Semester">
           <DataField>Semester</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="SubjectID">
-          <DataField>SubjectID</DataField>
-          <rd:TypeName>System.Int64</rd:TypeName>
-        </Field>
-        <Field Name="RoomID">
-          <DataField>RoomID</DataField>
-          <rd:TypeName>System.Int64</rd:TypeName>
-        </Field>
-        <Field Name="InstructorID">
-          <DataField>InstructorID</DataField>
-          <rd:TypeName>System.Int64</rd:TypeName>
-        </Field>
-        <Field Name="SemesterID">
-          <DataField>SemesterID</DataField>
-          <rd:TypeName>System.Int64</rd:TypeName>
-        </Field>
-        <Field Name="MiddleInitial">
-          <DataField>MiddleInitial</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="SectionID">
-          <DataField>SectionID</DataField>
-          <rd:TypeName>System.Int64</rd:TypeName>
-        </Field>
-        <Field Name="Section">
-          <DataField>Section</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="InstructorIDNumber">
-          <DataField>InstructorIDNumber</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="LectureUnit">
@@ -828,14 +764,18 @@
           <DataField>GroupDay</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="StudentID">
+          <DataField>StudentID</DataField>
+          <rd:TypeName>System.Int64</rd:TypeName>
+        </Field>
       </Fields>
       <rd:DataSetInfo>
         <rd:DataSetName>StudentRegistrationDataSet</rd:DataSetName>
-        <rd:SchemaPath>E:\Automated Scheduling System - VB\index\StudentRegistrationDataSet.xsd</rd:SchemaPath>
-        <rd:TableName>ClassScheduleView</rd:TableName>
+        <rd:SchemaPath>D:\Systems\Automated Scheduling System - VB\index\StudentRegistrationDataSet.xsd</rd:SchemaPath>
+        <rd:TableName>COR</rd:TableName>
         <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
         <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
-        <rd:TableAdapterName>ClassScheduleViewTableAdapter</rd:TableAdapterName>
+        <rd:TableAdapterName>CORTableAdapter</rd:TableAdapterName>
       </rd:DataSetInfo>
     </DataSet>
   </DataSets>

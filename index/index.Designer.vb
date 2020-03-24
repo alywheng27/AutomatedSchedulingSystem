@@ -89,12 +89,12 @@ Partial Class index
         Me.password.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.password.BackColor = System.Drawing.Color.Gray
         Me.password.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.password.Font = New System.Drawing.Font("Helvetica", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.password.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.password.ForeColor = System.Drawing.Color.WhiteSmoke
         Me.password.Location = New System.Drawing.Point(10, 12)
         Me.password.Name = "password"
         Me.password.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.password.Size = New System.Drawing.Size(196, 16)
+        Me.password.Size = New System.Drawing.Size(196, 15)
         Me.password.TabIndex = 2
         '
         'Panel3
@@ -110,11 +110,11 @@ Partial Class index
         '
         Me.username.BackColor = System.Drawing.Color.Gray
         Me.username.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.username.Font = New System.Drawing.Font("Helvetica", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.username.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.username.ForeColor = System.Drawing.Color.WhiteSmoke
         Me.username.Location = New System.Drawing.Point(10, 8)
         Me.username.Name = "username"
-        Me.username.Size = New System.Drawing.Size(196, 16)
+        Me.username.Size = New System.Drawing.Size(196, 15)
         Me.username.TabIndex = 1
         '
         'btnSubmit
@@ -133,22 +133,22 @@ Partial Class index
         'label2
         '
         Me.label2.AutoSize = True
-        Me.label2.Font = New System.Drawing.Font("Helvetica", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.label2.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.label2.ForeColor = System.Drawing.Color.Gray
         Me.label2.Location = New System.Drawing.Point(44, 85)
         Me.label2.Name = "label2"
-        Me.label2.Size = New System.Drawing.Size(66, 15)
+        Me.label2.Size = New System.Drawing.Size(65, 16)
         Me.label2.TabIndex = 3
         Me.label2.Text = "Password"
         '
         'label1
         '
         Me.label1.AutoSize = True
-        Me.label1.Font = New System.Drawing.Font("Helvetica", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.label1.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.label1.ForeColor = System.Drawing.Color.Gray
         Me.label1.Location = New System.Drawing.Point(44, 20)
         Me.label1.Name = "label1"
-        Me.label1.Size = New System.Drawing.Size(65, 15)
+        Me.label1.Size = New System.Drawing.Size(67, 16)
         Me.label1.TabIndex = 2
         Me.label1.Text = "Username"
         '
@@ -163,7 +163,7 @@ Partial Class index
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "index"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Form1"
+        Me.Text = "Login"
         Me.TransparencyKey = System.Drawing.Color.Black
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()

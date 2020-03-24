@@ -29,7 +29,7 @@
     Public classID As Integer
 
     Private Sub classScheduleAU_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        listSubject()
+        listSubject(Nothing)
         loadRoom()
         loadSection()
         loadInstructor()
@@ -94,13 +94,17 @@
         passSemesterID = semesterID(cbSemester.SelectedIndex)
     End Sub
 
-    Public Sub listSubject()
+    Public Sub listSubject(ByVal search As String)
         lvSubject.Items.Clear()
 
         Dim sql As String
         Dim dsSubject = New DataSet
 
-        sql = "SELECT * FROM SubjectView WHERE Department = '" & objUser.getUserType & "' AND IsDeleted = 'False' "
+        If search = Nothing Then
+            sql = "SELECT * FROM SubjectView WHERE Department = '" & objUser.getUserType & "' AND IsDeleted = 'False' "
+        Else
+            sql = "SELECT * FROM SubjectView WHERE Department = '" & objUser.getUserType & "' AND ((Subject LIKE '%" & search & "%') OR (SubjectDescription LIKE '%" & search & "%')) AND IsDeleted = 'False' "
+        End If
 
         If fillData(sql, dsSubject, "tblSubject") = True Then
             If dsSubject.Tables("tblSubject").Rows.Count > 0 Then
@@ -227,7 +231,7 @@
         Dim dsTimeStart = New DataSet
 
         If check = "MWF" Then
-            sql = "SELECT * FROM Time WHERE TimeSection = 3 OR TimeSection = 1 "
+            sql = "SELECT * FROM Time WHERE TimeSection = 3 OR TimeSection = 1 AND TimeID != 14 "
         Else
             sql = "SELECT * FROM Time WHERE TimeSection = 3 OR TimeSection = 2 "
         End If
@@ -258,7 +262,28 @@
         Dim dsTimeEnd = New DataSet
 
         If day = "MWF" Then
-            sql = "SELECT TOP 3 * FROM Time WHERE TimeID > " & timeStart & "AND TimeSection != 2 "
+            If timeStart = 1 Then
+                sql = "SELECT TOP 3 * FROM Time WHERE TimeID > " & timeStart & "AND TimeSection != 2"
+            ElseIf timeStart = 2 Then
+                sql = "SELECT TOP 3 * FROM Time WHERE TimeID > " & timeStart & "AND TimeSection != 2"
+            ElseIf timeStart = 4 Then
+                sql = "SELECT TOP 3 * FROM Time WHERE TimeID > " & timeStart & "AND TimeSection != 2"
+            ElseIf timeStart = 5 Then
+                sql = "SELECT TOP 3 * FROM Time WHERE TimeID > " & timeStart & "AND TimeSection != 2"
+            ElseIf timeStart = 6 Then
+                sql = "SELECT TOP 3 * FROM Time WHERE TimeID > " & timeStart & "AND TimeSection != 2"
+            ElseIf timeStart = 8 Then
+                sql = "SELECT TOP 3 * FROM Time WHERE TimeID > " & timeStart & "AND TimeSection != 2"
+            ElseIf timeStart = 9 Then
+                sql = "SELECT TOP 3 * FROM Time WHERE TimeID > " & timeStart & "AND TimeSection != 2"
+            ElseIf timeStart = 10 Then
+                sql = "SELECT TOP 3 * FROM Time WHERE TimeID > " & timeStart & "AND TimeSection != 2"
+            ElseIf timeStart = 12 Then
+                sql = "SELECT TOP 3 * FROM Time WHERE TimeID > " & timeStart & "AND TimeSection != 2"
+            Else
+                sql = "SELECT TOP 3 * FROM Time WHERE TimeID > " & timeStart & "AND TimeSection != 2 "
+            End If
+
         Else
             sql = "SELECT TOP 2 * FROM Time WHERE TimeID > " & timeStart & "AND TimeSection != 1 "
         End If
@@ -622,7 +647,7 @@
             chbFri.Enabled = False
             chbTue.Enabled = False
             chbThu.Enabled = False
-            loadTimeStart("TTH")
+            loadTimeStart("MWF")
         Else
             chbMon.Enabled = True
             chbWed.Enabled = True
@@ -644,7 +669,7 @@
             chbFri.Enabled = False
             chbTue.Enabled = False
             chbThu.Enabled = False
-            loadTimeStart("TTH")
+            loadTimeStart("MWF")
         Else
             chbMon.Enabled = True
             chbWed.Enabled = True
@@ -1111,5 +1136,9 @@
         loadInstructor()
         loadAcademicYear()
         loadSemester()
+    End Sub
+
+    Private Sub txtSearch_TextChanged(sender As Object, e As EventArgs) Handles txtSearch.TextChanged
+        listSubject(txtSearch.Text)
     End Sub
 End Class

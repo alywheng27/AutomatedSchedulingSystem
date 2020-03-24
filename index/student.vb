@@ -158,7 +158,7 @@ Public Class student
                 StudentRegistration.rvStudentRegistration.LocalReport.SetParameters(AcademicYear)
                 StudentRegistration.rvStudentRegistration.LocalReport.SetParameters(Semester)
 
-                StudentRegistration.ClassScheduleViewTableAdapter.Fill(StudentRegistration.StudentRegistrationDataSet.ClassScheduleView, dsClass.Tables("tblRegistration").Rows(0).Item("ClassScheduleID"), objCurrent.getYear, objCurrent.getSemester)
+                StudentRegistration.CORTableAdapter.Fill(StudentRegistration.StudentRegistrationDataSet.COR, studentID(lvStudent.SelectedIndices(0)), objCurrent.getYear, objCurrent.getSemester)
                 StudentRegistration.rvStudentRegistration.SetDisplayMode(Microsoft.Reporting.WinForms.DisplayMode.PrintLayout)
                 StudentRegistration.rvStudentRegistration.RefreshReport()
                 StudentRegistration.ShowDialog()

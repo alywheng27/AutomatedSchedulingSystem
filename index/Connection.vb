@@ -23,7 +23,7 @@ Module modDBOperations
         'dbSource = "Data Source = " & Environment.CurrentDirectory & "\a.accdb"
 
         'CN = New SqlConnection("Data Source=Hydroxench-PC\HYDROSQL;Initial Catalog=quizData;User Id=hydroxench;Password=12345;")
-        CN = New SqlConnection("Data Source=DESKTOP-R9KLLTO\SQLEXPRESS;Initial Catalog=trac-ass;User Id=aly27;Password=alymama07!;")
+        CN = New SqlConnection("Data Source=DESKTOP-C4499M6;Initial Catalog=trac-ass;User Id=cyberaly27;Password=teleport300L!;")
 
         'CN.ConnectionString = dbProvider & dbSource
         'CN.ConnectionString = conSTR
